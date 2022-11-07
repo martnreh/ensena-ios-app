@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
+		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F322919B72000900570 /* Ensena_AppApp.swift */; };
 		5BAF4F352919B72000900570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F342919B72000900570 /* ContentView.swift */; };
 		5BAF4F372919B72200900570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF4F362919B72200900570 /* Assets.xcassets */; };
@@ -18,9 +20,7 @@
 		5BAF4F6D2919B96600900570 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F6C2919B96600900570 /* CoursesView.swift */; };
 		5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F6E2919B98700900570 /* Courses-ViewModel.swift */; };
 		5BAF4F732919B9D700900570 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F722919B9D700900570 /* Course.swift */; };
-		5BAF4F752919B9F100900570 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F742919B9F100900570 /* DictionaryView.swift */; };
 		5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F792919BA6700900570 /* LoginView.swift */; };
-		5BAF4F7C2919BA7400900570 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F7B2919BA7400900570 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5BAF4F2F2919B72000900570 /* Ensena-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ensena-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF4F322919B72000900570 /* Ensena_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ensena_AppApp.swift; sourceTree = "<group>"; };
 		5BAF4F342919B72000900570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +57,7 @@
 		5BAF4F6C2919B96600900570 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		5BAF4F6E2919B98700900570 /* Courses-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Courses-ViewModel.swift"; sourceTree = "<group>"; };
 		5BAF4F722919B9D700900570 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		5BAF4F742919B9F100900570 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5BAF4F792919BA6700900570 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		5BAF4F7B2919BA7400900570 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B0813A72919D07D00702602 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				5B0813A82919D09400702602 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		5B0813AA2919D0A400702602 /* DictionaryView */ = {
+			isa = PBXGroup;
+			children = (
+				5B0813AB2919D0B500702602 /* DictionaryView.swift */,
+			);
+			path = DictionaryView;
+			sourceTree = "<group>";
+		};
 		5BAF4F262919B72000900570 = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +124,14 @@
 		5BAF4F312919B72000900570 /* Ensena-App */ = {
 			isa = PBXGroup;
 			children = (
+				5B0813AA2919D0A400702602 /* DictionaryView */,
+				5B0813A72919D07D00702602 /* ProfileView */,
 				5BAF4F782919BA5600900570 /* LoginView */,
-				5BAF4F772919BA4C00900570 /* ProfileView */,
 				5BAF4F712919B9C800900570 /* Models */,
 				5BAF4F322919B72000900570 /* Ensena_AppApp.swift */,
 				5BAF4F342919B72000900570 /* ContentView.swift */,
 				5BAF4F6A2919B93E00900570 /* Content-ViewModel.swift */,
 				5BAF4F702919B9A100900570 /* CoursesView */,
-				5BAF4F762919BA1C00900570 /* DictionaryView */,
 				5BAF4F362919B72200900570 /* Assets.xcassets */,
 				5BAF4F382919B72200900570 /* Preview Content */,
 			);
@@ -162,22 +178,6 @@
 				5BAF4F722919B9D700900570 /* Course.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5BAF4F762919BA1C00900570 /* DictionaryView */ = {
-			isa = PBXGroup;
-			children = (
-				5BAF4F742919B9F100900570 /* DictionaryView.swift */,
-			);
-			path = DictionaryView;
-			sourceTree = "<group>";
-		};
-		5BAF4F772919BA4C00900570 /* ProfileView */ = {
-			isa = PBXGroup;
-			children = (
-				5BAF4F7B2919BA7400900570 /* ProfileView.swift */,
-			);
-			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		5BAF4F782919BA5600900570 /* LoginView */ = {
@@ -318,14 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BAF4F752919B9F100900570 /* DictionaryView.swift in Sources */,
-				5BAF4F7C2919BA7400900570 /* ProfileView.swift in Sources */,
+				5B0813A92919D09400702602 /* ProfileView.swift in Sources */,
 				5BAF4F732919B9D700900570 /* Course.swift in Sources */,
 				5BAF4F352919B72000900570 /* ContentView.swift in Sources */,
 				5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */,
 				5BAF4F6B2919B93E00900570 /* Content-ViewModel.swift in Sources */,
 				5BAF4F6D2919B96600900570 /* CoursesView.swift in Sources */,
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
+				5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */,
 				5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
