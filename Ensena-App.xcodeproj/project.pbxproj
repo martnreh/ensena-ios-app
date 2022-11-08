@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
+		5B0813AE291AF06700702602 /* Login-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AD291AF06700702602 /* Login-ViewModel.swift */; };
+		5B0813B0291AF32000702602 /* Profile-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AF291AF32000702602 /* Profile-ViewModel.swift */; };
+		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
 		5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F322919B72000900570 /* Ensena_AppApp.swift */; };
 		5BAF4F352919B72000900570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F342919B72000900570 /* ContentView.swift */; };
 		5BAF4F372919B72200900570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF4F362919B72200900570 /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		5B0813AD291AF06700702602 /* Login-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-ViewModel.swift"; sourceTree = "<group>"; };
+		5B0813AF291AF32000702602 /* Profile-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile-ViewModel.swift"; sourceTree = "<group>"; };
+		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5BAF4F2F2919B72000900570 /* Ensena-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ensena-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF4F322919B72000900570 /* Ensena_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ensena_AppApp.swift; sourceTree = "<group>"; };
 		5BAF4F342919B72000900570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0813A82919D09400702602 /* ProfileView.swift */,
+				5B0813AF291AF32000702602 /* Profile-ViewModel.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAF4F722919B9D700900570 /* Course.swift */,
+				5B0813B1291AF39200702602 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAF4F792919BA6700900570 /* LoginView.swift */,
+				5B0813AD291AF06700702602 /* Login-ViewModel.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -318,12 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0813AE291AF06700702602 /* Login-ViewModel.swift in Sources */,
+				5B0813B0291AF32000702602 /* Profile-ViewModel.swift in Sources */,
 				5B0813A92919D09400702602 /* ProfileView.swift in Sources */,
 				5BAF4F732919B9D700900570 /* Course.swift in Sources */,
 				5BAF4F352919B72000900570 /* ContentView.swift in Sources */,
 				5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */,
 				5BAF4F6B2919B93E00900570 /* Content-ViewModel.swift in Sources */,
 				5BAF4F6D2919B96600900570 /* CoursesView.swift in Sources */,
+				5B0813B2291AF39200702602 /* User.swift in Sources */,
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
 				5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */,
 				5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */,

@@ -16,6 +16,8 @@ extension CoursesView{
      
        
         @Published var courseList = [Course]()
+        @Published var courseLista = [String]()
+            
         
         
        
