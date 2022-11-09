@@ -14,8 +14,6 @@ struct LoginView: View {
     
     @StateObject private var model = LoginViewModel()
 
-    
-
     var body: some View {
 
         VStack (spacing: 20){
@@ -167,4 +165,5 @@ struct Response: Codable
 {
     var _id: String
     var login: Bool
+    var admin: Bool
 }
