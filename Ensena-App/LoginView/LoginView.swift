@@ -59,6 +59,8 @@ struct LoginView: View {
                     .padding(.trailing, 10)
                     .autocapitalization(.none)
                 
+                
+                
                     
             }.background(Color("LightBlue"))
                 .cornerRadius(50)
@@ -84,6 +86,8 @@ struct LoginView: View {
                     .padding(.bottom, 20)
 
             }
+            
+            AsyncImage(url: URL(string: "https://lh3.googleusercontent.com/d/1_L06t19YwEb_lnXB4dZe0W9MNZ8iXENX"))
             
             if (!model.isLogged && model.change){
                 Text("Usuario y contraseña incorrectos")
@@ -146,6 +150,8 @@ struct LoginView: View {
         
      
     }
+    
+    
         
         
    
@@ -163,7 +169,7 @@ struct LoginView_Previews: PreviewProvider {
 
 struct Response: Codable
 {
-    var _id: String
+    var userId: String
     var login: Bool
     var admin: Bool
 }

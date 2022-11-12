@@ -12,13 +12,9 @@ import SwiftUI
 extension ContentView{
     
     @MainActor class ContentViewModel:ObservableObject{
-        
-     
        
         @Published var userId = 0
         
-        
-       
         
         func updateUserId (){
   

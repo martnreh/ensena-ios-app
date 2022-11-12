@@ -18,8 +18,6 @@ extension ProfileView{
         
         
         @Published var user = User()
-        
-     
         @Published var username: String = ""
         @Published var password: String = ""
         @Published var change: Bool = false

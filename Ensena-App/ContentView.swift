@@ -35,10 +35,8 @@ struct ContentView: View {
     var body: some View {
        
         TabView{
-            DictionaryView().tabItem{
+            MainQuizView().tabItem{
                 Image(systemName: "book")
-                    
-                    
                 Text("Diccionario")
             }
             
@@ -70,6 +68,7 @@ struct ContentView: View {
             
         }.accentColor(kMidnightGreen)
         
+       
     }
        
         
@@ -80,4 +79,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .previewDevice("iPhone 11")
     }
+    
 }
+
+
+

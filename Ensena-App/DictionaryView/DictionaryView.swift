@@ -1,20 +1,20 @@
 //
-//  DictionaryView.swift
+//  SwiftUIView.swift
 //  Ensena-App
 //
-//  Created by Adrian Martin Hernandez  on 07/11/22.
+//  Created by Adrian Faz on 11/11/22.
 //
 
 import SwiftUI
 
-struct DictionaryView: View {
+struct SwiftUIView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct DictionaryView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryView()
+        SwiftUIView()
     }
 }
