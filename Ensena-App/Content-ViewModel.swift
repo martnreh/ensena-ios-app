@@ -15,15 +15,8 @@ extension ContentView{
         
      
        
-        @Published var userId = 0
-        
-        
        
         
-        func updateUserId (){
-  
-           userId = 5
-            
-        }
+        
     }
 }

@@ -9,9 +9,18 @@
 /* Begin PBXBuildFile section */
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
-		5B0813AE291AF06700702602 /* Login-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AD291AF06700702602 /* Login-ViewModel.swift */; };
-		5B0813B0291AF32000702602 /* Profile-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AF291AF32000702602 /* Profile-ViewModel.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
+		5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D9E4F29223BE700A9C75D /* LoadingView.swift */; };
+		5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36A291E8B0C00BA8735 /* LearnView.swift */; };
+		5B35A36D291E917100BA8735 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36C291E917100BA8735 /* Word.swift */; };
+		5B8048D3292205A700245162 /* MainQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D2292205A700245162 /* MainQuizView.swift */; };
+		5B8048D6292209A400245162 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D5292209A400245162 /* QuestionView.swift */; };
+		5B8048D8292209CB00245162 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D7292209CB00245162 /* Trivia.swift */; };
+		5B8048DA292209EB00245162 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D9292209EB00245162 /* TriviaManager.swift */; };
+		5B8048DC29220A0300245162 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048DB29220A0300245162 /* TriviaView.swift */; };
+		5B8048DF29220A2D00245162 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048DE29220A2D00245162 /* Answer.swift */; };
+		5B8048E429220A6500245162 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048E329220A6500245162 /* AnswerRow.swift */; };
+		5B8048E629220A7B00245162 /* ProgressRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048E529220A7B00245162 /* ProgressRow.swift */; };
 		5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F322919B72000900570 /* Ensena_AppApp.swift */; };
 		5BAF4F352919B72000900570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F342919B72000900570 /* ContentView.swift */; };
 		5BAF4F372919B72200900570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF4F362919B72200900570 /* Assets.xcassets */; };
@@ -46,9 +55,18 @@
 /* Begin PBXFileReference section */
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
-		5B0813AD291AF06700702602 /* Login-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-ViewModel.swift"; sourceTree = "<group>"; };
-		5B0813AF291AF32000702602 /* Profile-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile-ViewModel.swift"; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5B2D9E4F29223BE700A9C75D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5B35A36A291E8B0C00BA8735 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		5B35A36C291E917100BA8735 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		5B8048D2292205A700245162 /* MainQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizView.swift; sourceTree = "<group>"; };
+		5B8048D5292209A400245162 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		5B8048D7292209CB00245162 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		5B8048D9292209EB00245162 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
+		5B8048DB29220A0300245162 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		5B8048DE29220A2D00245162 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		5B8048E329220A6500245162 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		5B8048E529220A7B00245162 /* ProgressRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRow.swift; sourceTree = "<group>"; };
 		5BAF4F2F2919B72000900570 /* Ensena-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ensena-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF4F322919B72000900570 /* Ensena_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ensena_AppApp.swift; sourceTree = "<group>"; };
 		5BAF4F342919B72000900570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,21 +109,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B0813A72919D07D00702602 /* ProfileView */ = {
+		5B35A369291D47EC00BA8735 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B8048D42922097900245162 /* QuizView */,
+				5BAF4F792919BA6700900570 /* LoginView.swift */,
 				5B0813A82919D09400702602 /* ProfileView.swift */,
-				5B0813AF291AF32000702602 /* Profile-ViewModel.swift */,
+				5B0813AB2919D0B500702602 /* DictionaryView.swift */,
+				5BAF4F6C2919B96600900570 /* CoursesView.swift */,
+				5B35A36A291E8B0C00BA8735 /* LearnView.swift */,
+				5B2D9E4F29223BE700A9C75D /* LoadingView.swift */,
 			);
-			path = ProfileView;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		5B0813AA2919D0A400702602 /* DictionaryView */ = {
+		5B8048D42922097900245162 /* QuizView */ = {
 			isa = PBXGroup;
 			children = (
-				5B0813AB2919D0B500702602 /* DictionaryView.swift */,
+				5B8048E229220A4E00245162 /* Components */,
+				5B8048DD29220A1B00245162 /* Models */,
+				5B8048D2292205A700245162 /* MainQuizView.swift */,
+				5B8048D5292209A400245162 /* QuestionView.swift */,
+				5B8048D7292209CB00245162 /* Trivia.swift */,
+				5B8048D9292209EB00245162 /* TriviaManager.swift */,
+				5B8048DB29220A0300245162 /* TriviaView.swift */,
 			);
-			path = DictionaryView;
+			path = QuizView;
+			sourceTree = "<group>";
+		};
+		5B8048DD29220A1B00245162 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B8048DE29220A2D00245162 /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B8048E229220A4E00245162 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B8048E329220A6500245162 /* AnswerRow.swift */,
+				5B8048E529220A7B00245162 /* ProgressRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		5BAF4F262919B72000900570 = {
@@ -131,14 +177,12 @@
 		5BAF4F312919B72000900570 /* Ensena-App */ = {
 			isa = PBXGroup;
 			children = (
-				5B0813AA2919D0A400702602 /* DictionaryView */,
-				5B0813A72919D07D00702602 /* ProfileView */,
-				5BAF4F782919BA5600900570 /* LoginView */,
+				5BAF4F342919B72000900570 /* ContentView.swift */,
+				5B35A369291D47EC00BA8735 /* Views */,
 				5BAF4F712919B9C800900570 /* Models */,
 				5BAF4F322919B72000900570 /* Ensena_AppApp.swift */,
-				5BAF4F342919B72000900570 /* ContentView.swift */,
 				5BAF4F6A2919B93E00900570 /* Content-ViewModel.swift */,
-				5BAF4F702919B9A100900570 /* CoursesView */,
+				5BAF4F702919B9A100900570 /* ViewModels */,
 				5BAF4F362919B72200900570 /* Assets.xcassets */,
 				5BAF4F382919B72200900570 /* Preview Content */,
 			);
@@ -170,13 +214,12 @@
 			path = "Ensena-AppUITests";
 			sourceTree = "<group>";
 		};
-		5BAF4F702919B9A100900570 /* CoursesView */ = {
+		5BAF4F702919B9A100900570 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5BAF4F6C2919B96600900570 /* CoursesView.swift */,
 				5BAF4F6E2919B98700900570 /* Courses-ViewModel.swift */,
 			);
-			path = CoursesView;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5BAF4F712919B9C800900570 /* Models */ = {
@@ -184,17 +227,9 @@
 			children = (
 				5BAF4F722919B9D700900570 /* Course.swift */,
 				5B0813B1291AF39200702602 /* User.swift */,
+				5B35A36C291E917100BA8735 /* Word.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5BAF4F782919BA5600900570 /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				5BAF4F792919BA6700900570 /* LoginView.swift */,
-				5B0813AD291AF06700702602 /* Login-ViewModel.swift */,
-			);
-			path = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,15 +362,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B0813AE291AF06700702602 /* Login-ViewModel.swift in Sources */,
-				5B0813B0291AF32000702602 /* Profile-ViewModel.swift in Sources */,
 				5B0813A92919D09400702602 /* ProfileView.swift in Sources */,
 				5BAF4F732919B9D700900570 /* Course.swift in Sources */,
 				5BAF4F352919B72000900570 /* ContentView.swift in Sources */,
+				5B8048DF29220A2D00245162 /* Answer.swift in Sources */,
+				5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */,
+				5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */,
+				5B8048E629220A7B00245162 /* ProgressRow.swift in Sources */,
 				5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */,
+				5B35A36D291E917100BA8735 /* Word.swift in Sources */,
+				5B8048E429220A6500245162 /* AnswerRow.swift in Sources */,
+				5B8048D3292205A700245162 /* MainQuizView.swift in Sources */,
+				5B8048D8292209CB00245162 /* Trivia.swift in Sources */,
+				5B8048DA292209EB00245162 /* TriviaManager.swift in Sources */,
 				5BAF4F6B2919B93E00900570 /* Content-ViewModel.swift in Sources */,
+				5B8048DC29220A0300245162 /* TriviaView.swift in Sources */,
 				5BAF4F6D2919B96600900570 /* CoursesView.swift in Sources */,
 				5B0813B2291AF39200702602 /* User.swift in Sources */,
+				5B8048D6292209A400245162 /* QuestionView.swift in Sources */,
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
 				5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */,
 				5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */,
