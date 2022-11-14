@@ -11,7 +11,6 @@ import SwiftUI
 
 struct LoginView: View {
     
-    
     @StateObject private var model = LoginViewModel()
 
     var body: some View {
@@ -87,7 +86,6 @@ struct LoginView: View {
 
             }
             
-            AsyncImage(url: URL(string: "https://lh3.googleusercontent.com/d/1_L06t19YwEb_lnXB4dZe0W9MNZ8iXENX"))
             
             if (!model.isLogged && model.change){
                 Text("Usuario y contraseña incorrectos")
@@ -131,12 +129,14 @@ struct LoginView: View {
             
             let result = try? JSONDecoder().decode(Response.self, from: data)
             
-            model.change = true
             
             if let result = result {
                 DispatchQueue.main.async {
+                    model.change = true
+
                     if(result.login) {
                         model.isLogged = true
+                        //userId = result.userId
                     }
                 }
             } else {

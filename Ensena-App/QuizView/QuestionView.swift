@@ -15,7 +15,7 @@ struct QuestionView: View {
         VStack(spacing: 15){
             
             HStack{
-                Text("Partes del Cuerpo")
+                Text(tituloCursoActual)
                     .frame(width: 420)
                     .padding(10)
                     .foregroundColor(.white)
@@ -34,7 +34,7 @@ struct QuestionView: View {
             ProgressBar(progress: CGFloat(triviaManager.progress))
                 .padding(.bottom, 10)
                 
-            Image("Words")
+            Image("girl")
                 
                 .padding()
                 .background(Color("Teal"))
@@ -72,6 +72,6 @@ struct QuestionView: View {
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()
-            .environmentObject(TriviaManager())
+            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
     }
 }

@@ -18,6 +18,8 @@ let kMiddleBlue = Color(red: 0.47058823529411764, green: 0.803921568627451, blue
 let kTeal = Color(red: 0.1411764705882353, green: 0.4823529411764706, blue: 0.4823529411764706)
 
 var userId = 0
+var cursoActual: String = "6364360774dfad2101e1f079"
+var tituloCursoActual: String = "Abecedario I"
 
 func updateUserId(){
     
@@ -35,7 +37,7 @@ struct ContentView: View {
     var body: some View {
        
         TabView{
-            MainQuizView().tabItem{
+            DictionaryFazView().tabItem{
                 Image(systemName: "book")
                 Text("Diccionario")
             }

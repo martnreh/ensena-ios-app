@@ -50,7 +50,7 @@ struct AnswerRow_Previews: PreviewProvider {
     static var previews: some View {
         
         AnswerRow(answer: Answer(text: "Single", isCorrect: false))
-            .environmentObject(TriviaManager())
+            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
 
     }
 }

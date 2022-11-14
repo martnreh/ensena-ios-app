@@ -25,7 +25,7 @@ struct TriviaView: View {
             
             Button {
                 Task.init{
-                    await triviaManager.fetchTrivia()
+                    await triviaManager.fetchTrivia(courseId: "6364360774dfad2101e1f079")
                 }
             } label: {
                     Text("Jugar de Nuevo")
@@ -49,6 +49,6 @@ struct TriviaView: View {
 struct TriviaView_Previews: PreviewProvider {
     static var previews: some View {
         TriviaView()
-            .environmentObject(TriviaManager())
+            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
     }
 }

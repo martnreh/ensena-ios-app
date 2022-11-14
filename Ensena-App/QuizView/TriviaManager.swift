@@ -17,15 +17,17 @@ class TriviaManager: ObservableObject {
     @Published private(set) var answerChoices: [Answer] = []
     @Published private(set) var progress: Float = 0.00
     @Published private(set) var score = 0
+    @Published var cursoActual: String = "6364360774dfad2101e1f079"
 
-    init() {
+    
+    init(courseId: String) {
         Task.init {
-            await fetchTrivia()
+            await fetchTrivia(courseId: courseId)
         }
     }
     
-    func fetchTrivia() async {
-        guard let url = URL(string: "http://127.0.0.1:5000/course/6364360774dfad2101e1f079/practice") else {fatalError("Missing URL")}
+    func fetchTrivia(courseId: String) async {
+        guard let url = URL(string: ("http://127.0.0.1:5000/course/" + courseId + "/practice")) else {fatalError("Missing URL")}
         
         let urlRequest = URLRequest(url: url)
         

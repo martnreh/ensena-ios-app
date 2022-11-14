@@ -62,7 +62,7 @@ struct ProfileView: View {
                             .foregroundColor(.white)
                             .padding(.leading, 10)
                         Spacer()
-                    }.frame(width: 300, height: 70)
+                    }.frame(width: 300, height: 65)
                     .background(Color("MiddleBlue"))
                     .cornerRadius(10)
                     }
@@ -87,7 +87,7 @@ struct ProfileView: View {
                     .cornerRadius(10)
                     .foregroundColor(.white)
                     .cornerRadius(20)
-                    .padding(.top, 35)
+                    .padding(.top, 15)
                     .padding(.bottom, 20)
 
             }

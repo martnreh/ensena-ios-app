@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct MainQuizView: View {
-    
-    @StateObject var triviaManager = TriviaManager()
+    var cursoId: String
+    @StateObject var triviaManager = TriviaManager(courseId: cursoActual)
     var body: some View {
 
         NavigationView {
+            
             VStack(spacing: 40){
                     VStack(spacing: 20){
-                        Text("Inicio de Quiz").font(.title)
+                        Text("Quiz: \(tituloCursoActual)" ).font(.title)
                             .fontWeight(.heavy)
                             .foregroundColor(Color("Teal"))
                         
@@ -39,12 +40,13 @@ struct MainQuizView: View {
                     .cornerRadius(30)
                     .shadow(radius: 10)
                 }
-                    
+                
+
                     
                     
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
-                .background(Color("Fondo"))
+                .background(Color("LightBlue"))
         }
     }
     
@@ -53,6 +55,6 @@ struct MainQuizView: View {
 
 struct MainQuizView_Previews: PreviewProvider {
     static var previews: some View {
-        MainQuizView()
+        MainQuizView(cursoId: "6364360774dfad2101e1f079")
     }
 }
