@@ -41,7 +41,7 @@ struct ProfileView: View {
                     HStack{
                         ProgressView(value:
                                         Float(user.courseProgress), total: 100)
-                        .accentColor(Color("Middle Blue"))
+                        .accentColor(Color("MiddleBlue"))
                         .scaleEffect(x: 1, y: 2.8)
                         .frame(width: 280)
                         
@@ -97,7 +97,7 @@ struct ProfileView: View {
             }
             }
             else{
-                LoadingView(strong: true)
+                LoadingView(strong: false)
             }
             
             

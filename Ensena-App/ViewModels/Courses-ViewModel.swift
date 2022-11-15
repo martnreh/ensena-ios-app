@@ -18,7 +18,18 @@ extension CoursesView {
             print("aaaaaaaaaaaaa")
             print(idUserFetch)
             
-            guard let url = URL(string: ("http://127.0.0.1:5000/course/all/" + idUserFetch)) else {fatalError("Missing URL")}
+            var path : String = ""
+            if(idUserFetch == ""){
+               path = "http://127.0.0.1:5000/course/all"
+                
+            }
+            else{
+               path = "http://127.0.0.1:5000/course/all/"
+                
+            }
+            print((path + idUserFetch))
+            guard let url = URL(string: (path + idUserFetch)) else {fatalError("Missing URL")}
+            
             
             let urlRequest = URLRequest(url: url)
             
@@ -53,10 +64,10 @@ struct courseList: Decodable {
     
     struct myCourse: Decodable, Identifiable {
         
-        var grade: String
+        var grade: Int
         var id: String
         var image: String
-        var maxGrade: String
+        var maxGrade: Int
         var name: String
         
     }

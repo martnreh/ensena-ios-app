@@ -34,8 +34,19 @@ struct CoursesView: View {
         }.navigationBarTitle("Mis Cursos")
         .onAppear {
             Task {
-                await courseModel.fetchCourseInfo(idUserFetch: "6364357674dfad2101e1f078")
+                await courseModel.fetchCourseInfo(idUserFetch: userId)
         }}
+            
+        .onChange(of: userId, perform: { _ in
+            
+            print("Value Changed! REEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
+            Task {
+                await courseModel.fetchCourseInfo(idUserFetch: userId)
+        }
+            
+        })
+            
+        
             
     
     }
@@ -58,8 +69,8 @@ struct CoursesView_Previews: PreviewProvider {
 struct CourseView: View {
     
     var image: String
-    var grade: String
-    var max_grade : String
+    var grade: Int
+    var max_grade : Int
     var courseName: String
     var courseId: String
     @Binding var userId: String
@@ -78,7 +89,7 @@ struct CourseView: View {
             VStack (spacing: 8){
                 HStack{
                     Spacer()
-                    Text(grade + "/" + max_grade)
+                    Text( "\(grade) / \(max_grade)")
                         .foregroundColor(.white)
                     
                 }

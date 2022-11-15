@@ -22,9 +22,10 @@ var currentCourseTitle: String = "Abecedario I"
 struct ContentView: View {
     
     
-  
-    @State var userId : String = "6364357674dfad2101e1f078"
-    @State var isLoggedIn : Bool = true
+  //"6364357674dfad2101e1f078"
+    @State var userId : String = ""
+    @State var isLoggedIn : Bool = false
+    @State var admin : Bool = false
     init() {
         UITabBar.appearance().backgroundColor = UIColor.white
 
@@ -36,7 +37,7 @@ struct ContentView: View {
             
             
             if (!isLoggedIn){
-                LoginView(userId: $userId, isLoggedIn: $isLoggedIn).tabItem{
+                LoginView(userId: $userId, isLoggedIn: $isLoggedIn, isAdmin: $admin).tabItem{
                     Image(systemName: "person")
                     Text("Perfil")
                 }
@@ -58,7 +59,7 @@ struct ContentView: View {
                 Text("Cursos")
             }
 
-            DictionaryView().tabItem{
+            DictionaryView(userId: $userId).tabItem{
                 Image(systemName: "book")
                     
                     

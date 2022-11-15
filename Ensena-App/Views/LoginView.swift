@@ -18,6 +18,7 @@ struct LoginView: View {
     
     @Binding var userId: String
     @Binding var isLoggedIn: Bool
+    @Binding var isAdmin: Bool
     
     
     var body: some View {
@@ -130,7 +131,7 @@ struct LoginView: View {
                     DispatchQueue.main.async {
                         if(result.login) {
                             isLoggedIn = true
-                            userId = result._id
+                            userId = result.userId
                         }
                     }
                 }
@@ -145,13 +146,14 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(userId: .constant(""),isLoggedIn: .constant(false))
+        LoginView(userId: .constant(""),isLoggedIn: .constant(false), isAdmin: .constant(false))
     }
 }
 
 struct Response: Codable
 {
-    var _id: String
+    var userId: String
     var login: Bool
+    var admin : Bool
 }
 
