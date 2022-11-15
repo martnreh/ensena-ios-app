@@ -201,7 +201,7 @@ struct CourseTileProfileView: View {
     var body: some View {
         HStack{
         
-            
+
             
             Image(image)
                 .resizable()
