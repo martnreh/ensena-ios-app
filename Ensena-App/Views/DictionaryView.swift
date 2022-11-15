@@ -59,7 +59,7 @@ struct DictionaryView: View {
                     
                     NavigationLink(destination: LearnView(userId: $userId)){
                             
-                        WordView(palabra: word.name, image: "sign", grade: 10, max_grade: 10, courseName: word.courseName, courseId: "4", userId: $userId)
+                        WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: "4", userId: $userId)
                     
                             
                         }.background(.teal)
@@ -155,10 +155,15 @@ struct WordView: View {
 
         HStack{
             
-            Image("sign").resizable()
-                .scaledToFit()
-                .frame(width: 110)
-                .cornerRadius(7)
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                Color("CadetBlue")
+            }
+            .frame(width: 128, height: 128)
+            .clipShape(RoundedRectangle(cornerRadius: 7))
+            
+            
             VStack (alignment: .leading, spacing: 6){
                 Text(palabra)
                     .font(.system(size: 20, weight: .heavy))

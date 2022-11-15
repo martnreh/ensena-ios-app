@@ -22,7 +22,7 @@ struct CoursesView: View {
             ScrollView{
                 ForEach(courseModel.allCourses){ course in
                         
-                    CourseView(image: "fotoAbecedario", grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id, userId: $userId)
+                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id, userId: $userId)
                 
                 }
             }
@@ -75,16 +75,19 @@ struct CourseView: View {
     var courseId: String
     @Binding var userId: String
     
+    
     var body: some View {
-
+        
         HStack{
-            Image(image).resizable()
-                .frame(width: 105, height: 105)
-                .cornerRadius(10)
-                .shadow(radius: 10)
-                .padding(.leading, 4)
             
-            Divider()
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                Color("CadetBlue")
+            }
+            .frame(width: 128, height: 128)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+ 
             
             VStack (spacing: 8){
                 HStack{

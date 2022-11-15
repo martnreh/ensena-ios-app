@@ -25,7 +25,7 @@ struct TriviaView: View {
             
             Button {
                 Task.init{
-                    await triviaManager.fetchTrivia(courseId: "6364360774dfad2101e1f079")
+                    await triviaManager.fetchTrivia(courseId: currentCourseId)
                 }
             } label: {
                     Text("Jugar de Nuevo")

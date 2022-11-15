@@ -172,7 +172,7 @@ struct ProfileHeader: View {
             
             
         }.frame(width: 418, height: 260)
-            .background(Color("MiddleBlue"))
+            .background(Color("CadetBlue"))
             .padding(.bottom, 10)
     }
 }
@@ -201,6 +201,8 @@ struct CourseTileProfileView: View {
     var body: some View {
         HStack{
         
+            
+            
             Image(image)
                 .resizable()
                 .scaledToFit()
@@ -214,7 +216,7 @@ struct CourseTileProfileView: View {
                 .padding(.leading, 10)
             Spacer()
         }.frame(width: 300, height: 70)
-        .background(Color("MiddleBlue"))
+        .background(Color("CadetBlue"))
         .cornerRadius(10)
         
         }
