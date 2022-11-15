@@ -64,10 +64,10 @@ struct courseList: Decodable {
     
     struct myCourse: Decodable, Identifiable {
         
-        var grade: Int
+        var grade: String
         var id: String
         var image: String
-        var maxGrade: Int
+        var maxGrade: String
         var name: String
         
     }

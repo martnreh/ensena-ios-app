@@ -69,8 +69,8 @@ struct CoursesView_Previews: PreviewProvider {
 struct CourseView: View {
     
     var image: String
-    var grade: Int
-    var max_grade : Int
+    var grade: String
+    var max_grade : String
     var courseName: String
     var courseId: String
     @Binding var userId: String

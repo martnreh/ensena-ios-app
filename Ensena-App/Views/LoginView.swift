@@ -132,6 +132,7 @@ struct LoginView: View {
                         if(result.login) {
                             isLoggedIn = true
                             userId = result.userId
+                            idUserGlobal = result.userId
                         }
                     }
                 }

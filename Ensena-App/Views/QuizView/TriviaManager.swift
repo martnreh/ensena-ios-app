@@ -10,6 +10,7 @@ import SwiftUI
 
 
 class TriviaManager: ObservableObject {
+    
     private(set) var trivia: [Trivia.Result] = []
     @Published private(set) var length = 0
     @Published private(set) var index = 0

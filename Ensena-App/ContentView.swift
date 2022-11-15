@@ -15,6 +15,8 @@ var currentCourseId: String = "6364360774dfad2101e1f079"
 //6364357674dfad2101e1f078
 var currentCourseTitle: String = "Abecedario I"
 
+var idUserGlobal: String = ""
+
 
 
 
