@@ -22,7 +22,7 @@ struct CoursesView: View {
             ScrollView{
                 ForEach(courseModel.allCourses){ course in
                         
-                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id, userId: $userId)
+                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id)
                 
                 }
             }
@@ -73,7 +73,6 @@ struct CourseView: View {
     var max_grade : String
     var courseName: String
     var courseId: String
-    @Binding var userId: String
     
     
     var body: some View {
@@ -90,12 +89,16 @@ struct CourseView: View {
  
             
             VStack (spacing: 8){
-                HStack{
-                    Spacer()
-                    Text( "\(grade) / \(max_grade)")
-                        .foregroundColor(.white)
-                    
+                
+                if (grade != "-1"){
+                    HStack{
+                        Spacer()
+                        Text( "\(grade) / \(max_grade)")
+                            .foregroundColor(.white)
+                        
+                    }
                 }
+                
                 Text(courseName)
                     .font(.system(.title))
                     .foregroundColor(.white)
@@ -103,7 +106,7 @@ struct CourseView: View {
                     .minimumScaleFactor(0.5)
                 
                 HStack{
-                    NavigationLink (destination: LearnView(userId: $userId)) {
+                    NavigationLink (destination: LearnView(courseId: courseId, courseName: courseName)) {
 
                               Text("Aprende")
                                   .fontWeight(.semibold)
@@ -117,6 +120,8 @@ struct CourseView: View {
                     .simultaneousGesture(TapGesture().onEnded{
                        currentCourseId = courseId
                         currentCourseTitle = courseName
+                        print("current Course")
+                        print(courseId)
                     })
                     
                     
@@ -137,6 +142,8 @@ struct CourseView: View {
                         currentCourseId = courseId
                         currentCourseTitle = courseName
                     })
+                    
+                   
                     
 
                     

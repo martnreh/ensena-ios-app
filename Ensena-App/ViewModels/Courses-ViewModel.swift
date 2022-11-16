@@ -15,8 +15,7 @@ extension CoursesView {
         
         
         func fetchCourseInfo(idUserFetch: String) async {
-            print("aaaaaaaaaaaaa")
-            print(idUserFetch)
+           
             
             var path : String = ""
             if(idUserFetch == ""){

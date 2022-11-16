@@ -136,8 +136,6 @@ struct LoginView: View {
                         }
                     }
                 }
-                print("bbbbbbb")
-                print(userId)
                 
             
             }.resume()

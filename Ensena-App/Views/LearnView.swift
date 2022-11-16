@@ -8,13 +8,33 @@
 import SwiftUI
 
 
+struct Learn: Decodable
+{
+    var wordList: [Wordd]
+    
+    
+    struct Wordd: Decodable,Identifiable{
+        
+        var id: UUID {
+            UUID()
+        }
+        var url: String
+        var word: String
+
+        
+    }
+ 
+
+}
+
 
 struct LearnView: View {
     
-    @State var user = User()
-    @State var infoLoaded  = false
-    @Binding var userId: String
-    @State var elementList = [Word]()
+  
+    @State var infoLoaded  = true
+    var courseId: String
+    var courseName: String
+    @State var wordList : [Learn.Wordd] = []
    
     
     var body: some View {
@@ -27,7 +47,7 @@ struct LearnView: View {
              
                 HStack{
                     
-                    Text(currentCourseTitle)
+                    Text(courseName)
                      
                         .frame(maxWidth: .infinity)
                         .padding(.init(top: 60, leading: 0, bottom: 20, trailing: 0))
@@ -40,8 +60,9 @@ struct LearnView: View {
                
                 ScrollView{
                             
-                    ForEach(elementList) { element in
-                        CourseElement(title: element.word, image: element.image )
+                    ForEach(wordList) { element in
+                        CourseElement(title: element.word, image: element.url )
+                        
                     }
                     
                     
@@ -72,7 +93,7 @@ struct LearnView: View {
             .edgesIgnoringSafeArea(.all)
             .onAppear{
                 Task{
-                    await fetchUserInfo()
+                    await fetchInfo()
                 }
             }
           }
@@ -84,14 +105,10 @@ struct LearnView: View {
     }
     
     
-    func fetchUserInfo() async {
+    func fetchInfo() async {
         
-        var a = Word(word: "Letra A", image: "sign")
-        var b = Word(word: "Letra B", image: "sign")
-        elementList.append(a)
-        elementList.append(b)
         
-        let urlString = "http://127.0.0.1:5000/course/\(userId)/learn"
+        let urlString = "http://127.0.0.1:5000/course/\(courseId)/learn"
         let url = URL(string: urlString)
         
         URLSession.shared.dataTask(with: url!) {data, _, error in
@@ -99,9 +116,17 @@ struct LearnView: View {
             if let data = data {
                 do {
                     let decoder = JSONDecoder()
-                    let decodedData = try decoder.decode(User.self, from: data)
-                    user = decodedData
-                    infoLoaded = true
+                    print("PPPPPPPPP")
+                    let decodedData = try decoder.decode(Learn.self, from: data)
+                    print("000000000")
+                  
+                    DispatchQueue.main.async{
+                        
+                        self.wordList = decodedData.wordList
+                        self.infoLoaded = true
+                        
+                    }
+                   
                 }catch{
                             print("Error!")
                     }
@@ -116,7 +141,7 @@ struct LearnView: View {
 
 struct LearnView_Previews: PreviewProvider {
     static var previews: some View {
-        LearnView(userId: .constant(""))
+        LearnView(courseId: "", courseName: "")
     }
 }
 
@@ -136,11 +161,19 @@ struct CourseElement: View {
                 .padding(.top, 10)
             
            
-            Image(image)
+            Image("sign")
                 .resizable()
                 .frame(width: 310, height: 250)
                 .cornerRadius(10)
                 .padding(.bottom, 10)
+//            AsyncImage(url: URL(string: image)) { imagen in
+//                imagen.resizable()
+//            }  placeholder: {
+//                Color("CadetBlue")
+//            }
+//            .frame(width: 310, height: 250)
+//                .cornerRadius(10)
+//                .padding(.bottom, 10)
                 
             
             Divider().frame(width: 350,height: 35).background(Color("CadetBlue")).padding(.top,0)

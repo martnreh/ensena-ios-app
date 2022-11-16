@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import LoremSwiftum
 
 struct Dic: Decodable
 {
@@ -45,31 +44,29 @@ struct DictionaryView: View {
       
         VStack{
             
-            Spacer()
-        Text("Diccionario").font(.system(size: 25, weight: .light))
-             Divider().padding(.horizontal , 40)
-        
-        Spacer()
+         
         
         
             
             NavigationView{
-                List(filteredList){ word in
                 
+                List(filteredList){ word in
                     
-                    NavigationLink(destination: LearnView(userId: $userId)){
-                            
-                        WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: "4", userId: $userId)
+                   
                     
-                            
-                        }.background(.teal)
+                    NavigationLink(destination: LearnView(courseId: word.courseId, courseName:word.courseName)){
+
+                        WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: word.courseId, userId: $userId)
+
+
+                        }.background(Color("CadetBlue"))
                             .cornerRadius(10)
                         
                         
                     
                 }.searchable(text: $searchText, prompt: "Ingresa tu palabra")
                     
-                    .navigationTitle("Palabras LSM")
+                    .navigationTitle("Diccionario")
                     .onChange(of: searchText){search in
                         filteredList = allWords.filter({$0.name.contains(search)})
                         if(search == ""){
@@ -177,21 +174,21 @@ struct WordView: View {
                 HStack (spacing: 30){
                     Text(courseName)
                        
-                    NavigationLink (destination: LearnView(userId: $userId)) {
-
-                              Text("Aprende")
-                                  .fontWeight(.semibold)
-                                  .font(.system(size: 15))
-                                  .padding(8)
-                                  .foregroundColor(.white)
-                                  .background(Color("MiddleBlue"))
-                                  .cornerRadius(50)
-                                  
-                    }.navigationBarBackButtonHidden(true)
-                    .simultaneousGesture(TapGesture().onEnded{
-                       currentCourseId = courseId
-                        currentCourseTitle = courseName
-                    })
+//                    NavigationLink (destination: LearnView(courseId: "6364360774dfad2101e1f079")) {
+//
+//                              Text("Aprende")
+//                                  .fontWeight(.semibold)
+//                                  .font(.system(size: 15))
+//                                  .padding(8)
+//                                  .foregroundColor(.white)
+//                                  .background(Color("MiddleBlue"))
+//                                  .cornerRadius(50)
+//
+//                    }.navigationBarBackButtonHidden(true)
+//                    .simultaneousGesture(TapGesture().onEnded{
+//                       currentCourseId = courseId
+//                        currentCourseTitle = courseName
+//                    })
                     
                 }.foregroundColor(.white)
                     .font(.system(size: 13, weight: .semibold))
@@ -203,7 +200,7 @@ struct WordView: View {
             }.frame(height: 80)
         
         }.frame(width: 350, height: 120)
-            .background(Color("CadetBlue"))
+            //.background(Color("CadetBlue"))
             .cornerRadius(15)
         
     }
