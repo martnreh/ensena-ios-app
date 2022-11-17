@@ -160,20 +160,22 @@ struct CourseElement: View {
                 .foregroundColor(Color("MidnightGreen"))
                 .padding(.top, 10)
             
-           
+          /*
             Image("sign")
                 .resizable()
                 .frame(width: 310, height: 250)
                 .cornerRadius(10)
                 .padding(.bottom, 10)
-//            AsyncImage(url: URL(string: image)) { imagen in
-//                imagen.resizable()
-//            }  placeholder: {
-//                Color("CadetBlue")
-//            }
-//            .frame(width: 310, height: 250)
-//                .cornerRadius(10)
-//                .padding(.bottom, 10)
+            */
+            
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                Color("CadetBlue")
+            }
+            .frame(width: 310, height: 250)
+                .cornerRadius(10)
+                .padding(.bottom, 10)
                 
             
             Divider().frame(width: 350,height: 35).background(Color("CadetBlue")).padding(.top,0)

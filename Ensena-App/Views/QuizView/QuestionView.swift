@@ -55,13 +55,15 @@ struct QuestionView: View {
             
                 ProgressBar(progress: CGFloat(triviaManager.progress))
                     .padding(.bottom, 10)
-                    
-                Image("sign")
-                    
-                    .padding()
-                    .background(Color("Teal"))
+
+                AsyncImage(url: URL(string: triviaManager.url)) { imagen in
+                    imagen.resizable()
+                }  placeholder: {
+                    Color("CadetBlue")
+                }
+                .frame(width: 310, height: 250)
                     .cornerRadius(20)
-                
+                    .padding()
               
                 VStack (alignment: .leading, spacing: 20){
                     ForEach(triviaManager.answerChoices, id: \.id) { answer in

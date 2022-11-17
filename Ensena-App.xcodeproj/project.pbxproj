@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A80ED9F2925D42A00444399 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80ED9E2925D42A00444399 /* AdminView.swift */; };
+		3A80EDA12925D5A200444399 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EDA02925D5A200444399 /* UserDetailView.swift */; };
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A80ED9E2925D42A00444399 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		3A80EDA02925D5A200444399 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			children = (
 				5B8048D42922097900245162 /* QuizView */,
 				5BAF4F792919BA6700900570 /* LoginView.swift */,
+				3A80ED9E2925D42A00444399 /* AdminView.swift */,
+				3A80EDA02925D5A200444399 /* UserDetailView.swift */,
 				5B0813A82919D09400702602 /* ProfileView.swift */,
 				5B0813AB2919D0B500702602 /* DictionaryView.swift */,
 				5BAF4F6C2919B96600900570 /* CoursesView.swift */,
@@ -372,6 +378,7 @@
 			files = (
 				5B0813A92919D09400702602 /* ProfileView.swift in Sources */,
 				5BAF4F732919B9D700900570 /* Course.swift in Sources */,
+				3A80ED9F2925D42A00444399 /* AdminView.swift in Sources */,
 				5BAF4F352919B72000900570 /* ContentView.swift in Sources */,
 				5B8048DF29220A2D00245162 /* Answer.swift in Sources */,
 				5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */,
@@ -391,6 +398,7 @@
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
 				5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */,
 				5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */,
+				3A80EDA12925D5A200444399 /* UserDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
