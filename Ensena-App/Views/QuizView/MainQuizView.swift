@@ -20,7 +20,7 @@ struct MainQuizView: View {
                             .fontWeight(.heavy)
                             .foregroundColor(Color("Teal"))
                         
-                        Text("¿Listo para poner a prueba tus habilidades de Trivia?")
+                        Text("¡Hora de practicar lo que aprendiste!")
                             .foregroundColor(Color("Teal"))
                             .padding(.horizontal, 10)
                             .multilineTextAlignment(.center)
@@ -32,7 +32,7 @@ struct MainQuizView: View {
                     TriviaView()
                         .environmentObject(triviaManager)
                 } label: {
-                    Text("Iniciar Quiz")
+                    Text("Iniciar Practica")
                     .foregroundColor(.white)
                     .padding()
                     .padding(.horizontal)
@@ -47,6 +47,7 @@ struct MainQuizView: View {
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                 .background(Color("LightBlue"))
+                
         }
     } 
     

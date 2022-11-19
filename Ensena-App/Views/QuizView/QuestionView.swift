@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct QuestionView: View {
     @EnvironmentObject var triviaManager: TriviaManager
+    @State private var player : AVPlayer?
+
     var body: some View {
         
         VStack{
@@ -56,6 +59,7 @@ struct QuestionView: View {
                 ProgressBar(progress: CGFloat(triviaManager.progress))
                     .padding(.bottom, 10)
 
+                if (triviaManager.type == "img") {
                 AsyncImage(url: URL(string: triviaManager.url)) { imagen in
                     imagen.resizable()
                 }  placeholder: {
@@ -64,6 +68,21 @@ struct QuestionView: View {
                 .frame(width: 310, height: 250)
                     .cornerRadius(20)
                     .padding()
+                    
+                } else if (triviaManager.type == "vid"){
+                    let miUrl = triviaManager.url
+                    let player = AVPlayer(url: URL(string: miUrl)!)
+                    
+
+                    VideoPlayer(player: player)
+                        .frame(width: 320, height: 240)
+                        .cornerRadius(20)
+                        .padding()
+
+                    
+                                
+                        
+                }
               
                 VStack (alignment: .leading, spacing: 20){
                     ForEach(triviaManager.answerChoices, id: \.id) { answer in
@@ -92,6 +111,7 @@ struct QuestionView: View {
             }
             .edgesIgnoringSafeArea(.all)
             .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
             }
             else{
                 LoadingView(strong: false)

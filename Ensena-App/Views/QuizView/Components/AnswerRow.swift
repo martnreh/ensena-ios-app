@@ -20,7 +20,7 @@ struct AnswerRow: View {
     
     var body: some View {
         HStack(spacing: 20){
-            Image(systemName: "circle.fill")
+            Image(systemName: "hand.draw.fill")
                 .font(.caption)
             
             Text(answer.text)
