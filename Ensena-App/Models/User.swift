@@ -13,16 +13,25 @@ struct User: Decodable
     var position: String
     var fullName: String
     var courseProgress: Int
-    var completedCourses = [String]()
+    var completedCourses = [ImageCourse]()
+    
+    struct ImageCourse: Decodable, Identifiable {
+        var id: UUID {
+            UUID()
+        }
+        var image: String
+        var title: String
+    }
+
     
     init(){
         self.position = ""
         self.fullName = ""
         self.courseProgress = 0
-        self.completedCourses = [""]
+        self.completedCourses = [ImageCourse(image: "", title: "")]
     }
     
-    init(position: String, fullName: String, courseProgress: Int, completedCourses: [String] ){
+    init(position: String, fullName: String, courseProgress: Int, completedCourses: [ImageCourse] ){
         self.position = position
         self.fullName = fullName
         self.courseProgress = courseProgress

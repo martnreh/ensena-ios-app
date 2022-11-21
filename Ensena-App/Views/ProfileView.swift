@@ -61,7 +61,8 @@ struct ProfileView: View {
                 
                     ForEach(user.completedCourses) {value in
                         
-                        CourseTileProfileView(image: "ABC_Course", name: value)
+                        CourseTileProfileView(image: value.image, name: value.title
+                        )
                         }
                     
                 }
@@ -200,15 +201,16 @@ struct CourseTileProfileView: View {
     
     var body: some View {
         HStack{
-        
+            
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                Color("CadetBlue")
+            }
+            .frame(width: 75, height: 75)
 
             
-            Image(image)
-                .resizable()
-                .scaledToFit()
-                .frame(width:75)
-                .padding(3)
-                
+       
             
             Text(name)
                 .font(.system(size: 20, weight: .bold))

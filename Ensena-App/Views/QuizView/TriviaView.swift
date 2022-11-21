@@ -13,7 +13,7 @@ struct TriviaView: View {
     var body: some View {
         if triviaManager.reachedEnd{
         VStack(spacing: 20){
-            Text("Examen de Palabras")
+            Text("Práctica: \(currentCourseTitle)" )
                 .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color("Teal"))
@@ -21,7 +21,7 @@ struct TriviaView: View {
             Text("Felicidades, ¡terminaste la prueba!")
                 .foregroundColor(Color("Teal"))
             
-            Text("Obtuviste \(triviaManager.score) de \(triviaManager.length)")
+            Text("Tu puntaje: \(triviaManager.score) de \(triviaManager.length)")
             
             Button {
                 Task.init{
@@ -37,10 +37,14 @@ struct TriviaView: View {
                     .shadow(radius: 10)
                     
                 }
-        }.onAppear{
+        }.navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+                
+        .onAppear{
             Task {
                 await updateGrade()
             }
+           
         }
         
     } else {

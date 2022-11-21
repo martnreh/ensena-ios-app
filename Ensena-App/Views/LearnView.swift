@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 
 struct Learn: Decodable
@@ -20,6 +21,7 @@ struct Learn: Decodable
         }
         var url: String
         var word: String
+        var type: String
 
         
     }
@@ -61,7 +63,7 @@ struct LearnView: View {
                 ScrollView{
                             
                     ForEach(wordList) { element in
-                        CourseElement(title: element.word, image: element.url )
+                        CourseElement(title: element.word, image: element.url, type: element.type)
                         
                     }
                     
@@ -150,9 +152,14 @@ struct CourseElement: View {
     
     var title: String
     var image: String
+    var type: String
+    @State private var player : AVPlayer?
     
     
     var body: some View {
+        
+        
+        
         VStack() {
             
             Text(title)
@@ -160,21 +167,43 @@ struct CourseElement: View {
                 .foregroundColor(Color("MidnightGreen"))
                 .padding(.top, 10)
             
-           
+          /*
             Image("sign")
                 .resizable()
                 .frame(width: 310, height: 250)
                 .cornerRadius(10)
                 .padding(.bottom, 10)
-//            AsyncImage(url: URL(string: image)) { imagen in
-//                imagen.resizable()
-//            }  placeholder: {
-//                Color("CadetBlue")
-//            }
-//            .frame(width: 310, height: 250)
-//                .cornerRadius(10)
-//                .padding(.bottom, 10)
+            */
+            
+            if (type == "img") {
+            
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                Color("CadetBlue")
+            }
+            .frame(width: 310, height: 250)
+                .cornerRadius(10)
+                .padding(.bottom, 10)
                 
+            } else if (type == "vid"){
+                
+                let myUrl = URL(string: image)!
+                
+                VideoPlayer(player: player)
+                    .frame(height: 263)
+                            .onAppear() {
+                                // Start the player going, otherwise controls don't appear
+     
+                                let player = AVPlayer(url: myUrl)
+                                self.player = player
+                                player.play()
+                                
+                                
+                               
+                            }
+
+            }
             
             Divider().frame(width: 350,height: 35).background(Color("CadetBlue")).padding(.top,0)
             

@@ -134,6 +134,11 @@ struct LoginView: View {
                             userId = result.userId
                             idUserGlobal = result.userId
                         }
+                        
+                        if (result.admin){
+                            isAdmin = true
+                        }
+                        
                     }
                 }
                 
