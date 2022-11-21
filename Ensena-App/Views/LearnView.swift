@@ -167,13 +167,6 @@ struct CourseElement: View {
                 .foregroundColor(Color("MidnightGreen"))
                 .padding(.top, 10)
             
-          /*
-            Image("sign")
-                .resizable()
-                .frame(width: 310, height: 250)
-                .cornerRadius(10)
-                .padding(.bottom, 10)
-            */
             
             if (type == "img") {
             
@@ -189,18 +182,18 @@ struct CourseElement: View {
             } else if (type == "vid"){
                 
                 let myUrl = URL(string: image)!
+                let player = AVPlayer(url: myUrl)
+                        
                 
                 VideoPlayer(player: player)
                     .frame(height: 263)
                             .onAppear() {
-                                // Start the player going, otherwise controls don't appear
-     
-                                let player = AVPlayer(url: myUrl)
-                                self.player = player
                                 player.play()
+                                addObserver(player: player)
+                            }
+                            .onDisappear{
                                 
-                                
-                               
+                                removeObserver(player: player)
                             }
 
             }
@@ -223,6 +216,21 @@ struct CourseElement: View {
         
         
     }
+    
+
+    
+    func addObserver(player : AVPlayer) {
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
+           object: player.currentItem, queue: nil) { notif in
+            player.seek(to: .zero)
+            player.play()
+            }
+        }
+        
+    func removeObserver(player : AVPlayer) {
+        NotificationCenter.default.removeObserver(self,name: .AVPlayerItemDidPlayToEndTime,object: nil)
+
+        }
     
     
     

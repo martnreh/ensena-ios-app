@@ -133,11 +133,10 @@ struct LoginView: View {
                             isLoggedIn = true
                             userId = result.userId
                             idUserGlobal = result.userId
+                            isAdmin = result.admin
                         }
                         
-                        if (result.admin){
-                            isAdmin = true
-                        }
+                       
                         
                     }
                 }

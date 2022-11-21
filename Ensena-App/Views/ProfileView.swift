@@ -62,7 +62,7 @@ struct ProfileView: View {
                     ForEach(user.completedCourses) {value in
                         
                         CourseTileProfileView(image: value.image, name: value.title
-                        )
+                        ).padding(.horizontal,30)
                         }
                     
                 }
@@ -217,11 +217,13 @@ struct CourseTileProfileView: View {
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             Spacer()
-        }.frame(width: 300, height: 70)
+        }
+        
+        .frame(height: 70)
         .background(Color("CadetBlue"))
         .cornerRadius(10)
         
-        }
+    }
 }
 
 

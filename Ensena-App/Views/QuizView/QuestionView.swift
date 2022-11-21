@@ -10,7 +10,6 @@ import AVKit
 
 struct QuestionView: View {
     @EnvironmentObject var triviaManager: TriviaManager
-    @State private var player : AVPlayer?
 
     var body: some View {
         
@@ -72,15 +71,24 @@ struct QuestionView: View {
                 } else if (triviaManager.type == "vid"){
                     let miUrl = triviaManager.url
                     let player = AVPlayer(url: URL(string: miUrl)!)
-                    
+
+
 
                     VideoPlayer(player: player)
                         .frame(width: 320, height: 240)
-                        .cornerRadius(20)
+                        .cornerRadius(25)
                         .padding()
-
+                        .onAppear {
+                            player.play()
+                            addObserver(player: player)
+                        }
+                        .onDisappear {
+                            removeObserver(player: player)
+                        }
                     
-                                
+                    
+                   
+                        
                         
                 }
               
@@ -120,6 +128,20 @@ struct QuestionView: View {
         
         
     }
+    
+    
+    func addObserver(player : AVPlayer) {
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
+           object: player.currentItem, queue: nil) { notif in
+            player.seek(to: .zero)
+            player.play()
+            }
+        }
+        
+    func removeObserver(player : AVPlayer) {
+        NotificationCenter.default.removeObserver(self,name: .AVPlayerItemDidPlayToEndTime,object: nil)
+
+        }
         
     
 }

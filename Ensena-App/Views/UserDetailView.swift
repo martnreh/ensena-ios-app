@@ -40,7 +40,7 @@ struct UserDetailView: View {
                     ForEach(user.completedCourses) {value in
                         
                         CourseTileProfileView(image: value.image, name: value.title
-                        )
+                        ).padding(.horizontal,30)
                         }
                     
                 }
