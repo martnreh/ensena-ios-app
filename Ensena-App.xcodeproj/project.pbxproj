@@ -13,7 +13,6 @@
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
 		5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D9E4F29223BE700A9C75D /* LoadingView.swift */; };
-		5B2D9E532922C2C000A9C75D /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 5B2D9E522922C2C000A9C75D /* LoremSwiftum */; };
 		5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36A291E8B0C00BA8735 /* LearnView.swift */; };
 		5B35A36D291E917100BA8735 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36C291E917100BA8735 /* Word.swift */; };
 		5B8048D3292205A700245162 /* MainQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D2292205A700245162 /* MainQuizView.swift */; };
@@ -94,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2D9E532922C2C000A9C75D /* LoremSwiftum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +255,6 @@
 			);
 			name = "Ensena-App";
 			packageProductDependencies = (
-				5B2D9E522922C2C000A9C75D /* LoremSwiftum */,
 			);
 			productName = "Ensena-App";
 			productReference = 5BAF4F2F2919B72000900570 /* Ensena-App.app */;
@@ -558,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ensena-App/Preview Content\"";
-				DEVELOPMENT_TEAM = 52G8X4NULG;
+				DEVELOPMENT_TEAM = 2TX9W9SS3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -590,7 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ensena-App/Preview Content\"";
-				DEVELOPMENT_TEAM = 52G8X4NULG;
+				DEVELOPMENT_TEAM = 2TX9W9SS3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -740,14 +737,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5B2D9E522922C2C000A9C75D /* LoremSwiftum */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5B2D9E512922C2BF00A9C75D /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
-			productName = LoremSwiftum;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BAF4F272919B72000900570 /* Project object */;
 }

@@ -15,6 +15,7 @@ struct LoginView: View {
     @State var username: String = ""
     @State var password: String = ""
     @State var change: Bool = false
+    @State var mensaje: String = ""
     
     @Binding var userId: String
     @Binding var isLoggedIn: Bool
@@ -84,12 +85,16 @@ struct LoginView: View {
 
             }
             
-            if (!isLoggedIn && change){
+            if (mensaje != "") {
                 VStack{
-                    Text("Usuario y contraseña incorrectos")
+                    
+                    Text(mensaje)
                         .foregroundColor(.red)
-                }
+                        .padding()
+                        .multilineTextAlignment(.center)
+                    
                
+            }
             }
             Spacer()
         }
@@ -134,6 +139,9 @@ struct LoginView: View {
                             userId = result.userId
                             idUserGlobal = result.userId
                             isAdmin = result.admin
+                            isAdminGlobal = result.admin
+                        } else {
+                            mensaje = result.message
                         }
                         
                        
@@ -158,5 +166,6 @@ struct Response: Codable
     var userId: String
     var login: Bool
     var admin : Bool
+    var message: String
 }
 

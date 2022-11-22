@@ -18,17 +18,17 @@ extension CoursesView {
            
             
             var path : String = ""
-            if(idUserFetch == ""){
-               path = "http://127.0.0.1:5000/course/all"
-                
+            if(idUserFetch != "" && isAdminGlobal == false){
+               path = "http://127.0.0.1:5000/course/all/"
             }
             else{
-               path = "http://127.0.0.1:5000/course/all/"
-                
+                path = "http://127.0.0.1:5000/course/all"
             }
-            print((path + idUserFetch))
-            guard let url = URL(string: (path + idUserFetch)) else {fatalError("Missing URL")}
+
+
             
+            guard let url = URL(string: isAdminGlobal ? path: (path + idUserFetch)) else {fatalError("Missing URL")}
+
             
             let urlRequest = URLRequest(url: url)
             
