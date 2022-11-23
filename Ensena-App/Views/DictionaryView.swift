@@ -50,7 +50,9 @@ struct DictionaryView: View {
             
             NavigationView{
                 
-                List(filteredList){ word in
+                ScrollView{
+                
+                ForEach(filteredList){ word in
                     
                    
                     
@@ -59,12 +61,13 @@ struct DictionaryView: View {
                         WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: word.courseId, userId: $userId)
 
 
-                        }.background(Color("CadetBlue"))
+                        }.background(Color("MidnightGreen"))
                             .cornerRadius(10)
                         
                         
                     
                 }.searchable(text: $searchText, prompt: "Ingresa tu palabra")
+                }
                     
                     .navigationTitle("Diccionario")
                     .onChange(of: searchText){search in
@@ -155,9 +158,10 @@ struct WordView: View {
             AsyncImage(url: URL(string: image)) { imagen in
                 imagen.resizable()
             }  placeholder: {
-                Color("CadetBlue")
+                LoadingView(strong: true)
+                //Color("MidnightGreen")
             }
-            .frame(width: 128, height: 128)
+            .frame(width: 100, height: 128)
             .clipShape(RoundedRectangle(cornerRadius: 7))
             
             

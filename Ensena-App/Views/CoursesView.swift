@@ -106,6 +106,7 @@ struct CourseView: View {
                     .minimumScaleFactor(0.5)
                 
                 HStack{
+                    Spacer()
                     NavigationLink (destination: LearnView(courseId: courseId, courseName: courseName)) {
 
                               Text("Aprende")
@@ -143,10 +144,8 @@ struct CourseView: View {
                         currentCourseTitle = courseName
                     })
                     
-                   
-                    
-
-                    
+                    Spacer()
+      
                 }
                 
             }

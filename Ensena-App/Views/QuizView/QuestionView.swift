@@ -57,6 +57,8 @@ struct QuestionView: View {
             
                 ProgressBar(progress: CGFloat(triviaManager.progress))
                     .padding(.bottom, 10)
+                
+                
 
                 if (triviaManager.type == "img") {
                 AsyncImage(url: URL(string: triviaManager.url)) { imagen in
@@ -70,9 +72,7 @@ struct QuestionView: View {
                     
                 } else if (triviaManager.type == "vid"){
                     let miUrl = triviaManager.url
-                    let player = AVPlayer(url: URL(string: miUrl)!)
-
-
+                   let player = AVPlayer(url: URL(string: miUrl)!)
 
                     VideoPlayer(player: player)
                         .frame(width: 320, height: 240)
@@ -85,10 +85,6 @@ struct QuestionView: View {
                         .onDisappear {
                             removeObserver(player: player)
                         }
-                    
-                    
-                   
-                        
                         
                 }
               

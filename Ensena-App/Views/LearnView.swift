@@ -66,25 +66,6 @@ struct LearnView: View {
                         CourseElement(title: element.word, image: element.url, type: element.type)
                         
                     }
-                    
-                    
-                    // Boton para ir a practica
-                    Button {
-                        // ACCION
-                        
-                    } label: {
-                    
-                        Text("Practica")
-                            .padding(.horizontal,70)
-                            .padding(.vertical, 10)
-                            .font(.system(size: 22, weight: .semibold))
-                            .background(Color("Teal"))
-                            .cornerRadius(50)
-                            .foregroundColor(.white)
-                            .cornerRadius(20)
-                            .padding(.top, 20)
-                            .padding(.bottom, 20)
-                    }
 
                 }
                 
@@ -118,9 +99,9 @@ struct LearnView: View {
             if let data = data {
                 do {
                     let decoder = JSONDecoder()
-                    print("PPPPPPPPP")
+                    
                     let decodedData = try decoder.decode(Learn.self, from: data)
-                    print("000000000")
+                    
                   
                     DispatchQueue.main.async{
                         
@@ -155,11 +136,8 @@ struct CourseElement: View {
     var type: String
     @State private var player : AVPlayer?
     
-    
     var body: some View {
-        
-        
-        
+    
         VStack() {
             
             Text(title)
@@ -167,23 +145,40 @@ struct CourseElement: View {
                 .foregroundColor(Color("MidnightGreen"))
                 .padding(.top, 10)
             
-            
             if (type == "img") {
             
             AsyncImage(url: URL(string: image)) { imagen in
                 imagen.resizable()
             }  placeholder: {
-                Color("CadetBlue")
+                LoadingView(strong: false)
+
             }
             .frame(width: 310, height: 250)
                 .cornerRadius(10)
                 .padding(.bottom, 10)
+            
+//                AsyncImage(url: URL(string: image)) { imagen in
+//
+//                    if let image = imagen.image {
+//                        image
+//                        //image // Displays the loaded image.
+//                    } else if imagen.error != nil {
+//                        Text("AAAAA") // Indicates an error.
+//                    } else {
+//                       ProgressView() // Acts as a placeholder.
+//                    }
+//                }
+//                .frame(width: 310, height: 250)
+//                    .cornerRadius(10)
+//                    .padding(.bottom, 10)
                 
             } else if (type == "vid"){
                 
                 let myUrl = URL(string: image)!
                 let player = AVPlayer(url: myUrl)
+                
                         
+                //if AVAsset(url: myUrl).isPlayable
                 
                 VideoPlayer(player: player)
                     .frame(height: 263)
@@ -195,6 +190,8 @@ struct CourseElement: View {
                                 
                                 removeObserver(player: player)
                             }
+              
+               
 
             }
             
@@ -207,17 +204,18 @@ struct CourseElement: View {
         .padding(.all, 20)
         .padding(.bottom, 0)
         
-       
-        
         .shadow(color: Color.gray.opacity(0.7),
                 radius: 8,
                 x: 0,
                 y: 0)
+        .onAppear(){
+            print("aaaaaaa")
+            print(image)
+        }
         
         
     }
     
-
     
     func addObserver(player : AVPlayer) {
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
