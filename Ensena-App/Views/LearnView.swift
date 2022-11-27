@@ -43,7 +43,7 @@ struct LearnView: View {
         
         
         if infoLoaded {
-            VStack{
+            VStack(spacing: -105){
                 // HEADER
                 
              
@@ -56,8 +56,7 @@ struct LearnView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 22, weight: .semibold))
                         
-                }.background(Color("CadetBlue"))
-                Spacer()
+                }.background(Color("CadetBlue")).edgesIgnoringSafeArea(.all)
                     
                
                 ScrollView{
@@ -70,10 +69,9 @@ struct LearnView: View {
                 }
                 
                 
-                Spacer()
 
             }
-            .edgesIgnoringSafeArea(.all)
+            //.edgesIgnoringSafeArea(.all)
             .onAppear{
                 Task{
                     await fetchInfo()
