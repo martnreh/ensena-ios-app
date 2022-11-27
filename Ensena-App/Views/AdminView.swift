@@ -12,62 +12,59 @@ struct AdminView: View {
     @Binding var isLoggedIn: Bool
     @State private var showingAlert = false
     @State private var searchText = ""
+    @State var infoLoaded: Bool = false
     
     @State var admin : AdminInfo = AdminInfo(fullName: "", numUsers: "", userList: [AdminInfo.userData(userId: "", courseProgress: 0, fullName: "")])
 
     var body: some View {
         NavigationView{
-        VStack{
-    VStack{
-        HStack{
-        Image("ProfileImage")
-            .resizable()
-            .scaledToFit()
-            .frame(width:60)
-            .padding(.top, 10)
-            .padding(.trailing, 25)
-        
-            VStack{
-                Text(admin.fullName)
-            .foregroundColor(.white)
-            .font(.system(size: 24, weight: .bold))
-            .padding(.top, 20)
-  
-            Text("Administrador")
-                .foregroundColor(.white)
-                .font(.system(size: 17, weight: .thin))
-            }
+            if infoLoaded{
+                VStack{
             
-        }.padding(.top, 40)
-            .padding(.bottom, 10)
-        
-        HStack{
-            Image("iconoAdminProfile")
-                .padding(.trailing, 5)
-                .padding(.leading, 10)
-            Text(" \(admin.numUsers) usuarios")
-                .foregroundColor(.white)
-                .font(.system(size: 17, weight: .light))
-                      
-            Spacer()
 
-        }.padding(.leading, 30)
-        
-    }.frame(width: 440, height: 210)
-        .background(Color("MidnightGreen"))
-        .cornerRadius(35)
-        .ignoresSafeArea()
-            
-            
-            
+            VStack{
+                HStack{
+                Image("ProfileImage")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width:60)
+                    .padding(.top, 10)
+                    .padding(.trailing, 25)
+                
+                    VStack{
+                        Text(admin.fullName)
+                    .foregroundColor(.white)
+                    .font(.system(size: 24, weight: .bold))
+                    .padding(.top, 20)
+          
+                    Text("Administrador")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17, weight: .thin))
+                    }
+                    
+                }.padding(.top, 40)
+                    .padding(.bottom, 10)
+                
+                HStack{
+                    Image("iconoAdminProfile")
+                        .padding(.trailing, 5)
+                        .padding(.leading, 10)
+                    Text(" \(admin.numUsers) usuarios")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17, weight: .light))
+                              
+                    Spacer()
+
+                }.padding(.leading, 30)
+                
+            }.frame(width: 440, height: 210)
+                .background(Color("MidnightGreen"))
+                .cornerRadius(35)
+                .ignoresSafeArea()
             
             Text("Información de Usuarios")
                 .padding(.trailing,140)
             
-            
-            
-                
-
             ScrollView{
                 ForEach(admin.userList) {
                      usuario in
@@ -78,11 +75,6 @@ struct AdminView: View {
                     
                 }
                 }
-   
-            
-                
-           
-            
             
             Button {
                 showingAlert = true
@@ -110,6 +102,15 @@ struct AdminView: View {
             }
             Spacer()
             
+        
+            
+            
+            
+            }
+                
+            }
+            else{
+                LoadingView(strong: false)
             }
                
             
@@ -135,6 +136,7 @@ struct AdminView: View {
                     let decoder = JSONDecoder()
                     let decodedData = try decoder.decode(AdminInfo.self, from: data)
                     admin = decodedData
+                    infoLoaded = true
                 }catch{
                             print(userId)
                             print("Error!")
