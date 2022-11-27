@@ -159,7 +159,6 @@ struct WordView: View {
                 imagen.resizable()
             }  placeholder: {
                 LoadingView(strong: true)
-                //Color("MidnightGreen")
             }
             .frame(width: 100, height: 128)
             .clipShape(RoundedRectangle(cornerRadius: 7))
@@ -178,21 +177,6 @@ struct WordView: View {
                 HStack (spacing: 30){
                     Text(courseName)
                        
-//                    NavigationLink (destination: LearnView(courseId: "6364360774dfad2101e1f079")) {
-//
-//                              Text("Aprende")
-//                                  .fontWeight(.semibold)
-//                                  .font(.system(size: 15))
-//                                  .padding(8)
-//                                  .foregroundColor(.white)
-//                                  .background(Color("MiddleBlue"))
-//                                  .cornerRadius(50)
-//
-//                    }.navigationBarBackButtonHidden(true)
-//                    .simultaneousGesture(TapGesture().onEnded{
-//                       currentCourseId = courseId
-//                        currentCourseTitle = courseName
-//                    })
                     
                 }.foregroundColor(.white)
                     .font(.system(size: 13, weight: .semibold))

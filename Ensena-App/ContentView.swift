@@ -52,7 +52,7 @@ struct ContentView: View {
                 if (isAdmin){
                      AdminView(userId: $userId, isLoggedIn: $isLoggedIn).tabItem{
                          Image(systemName: "person")
-                         Text("Perfil")
+                         Text("Admin")
                      }
                      
                  }

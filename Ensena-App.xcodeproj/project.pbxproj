@@ -13,6 +13,8 @@
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
 		5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D9E4F29223BE700A9C75D /* LoadingView.swift */; };
+		5B355A8D2933D3D400B5561A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B355A8C2933D3D400B5561A /* RegisterView.swift */; };
+		5B355A8F2933E5DB00B5561A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B355A8E2933E5DB00B5561A /* Register.swift */; };
 		5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36A291E8B0C00BA8735 /* LearnView.swift */; };
 		5B35A36D291E917100BA8735 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35A36C291E917100BA8735 /* Word.swift */; };
 		5B8048D3292205A700245162 /* MainQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8048D2292205A700245162 /* MainQuizView.swift */; };
@@ -61,6 +63,8 @@
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B2D9E4F29223BE700A9C75D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5B355A8C2933D3D400B5561A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5B355A8E2933E5DB00B5561A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		5B35A36A291E8B0C00BA8735 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		5B35A36C291E917100BA8735 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		5B8048D2292205A700245162 /* MainQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizView.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				5BAF4F6C2919B96600900570 /* CoursesView.swift */,
 				5B35A36A291E8B0C00BA8735 /* LearnView.swift */,
 				5B2D9E4F29223BE700A9C75D /* LoadingView.swift */,
+				5B355A8C2933D3D400B5561A /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				5BAF4F722919B9D700900570 /* Course.swift */,
 				5B0813B1291AF39200702602 /* User.swift */,
 				5B35A36C291E917100BA8735 /* Word.swift */,
+				5B355A8E2933E5DB00B5561A /* Register.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 				5BAF4F732919B9D700900570 /* Course.swift in Sources */,
 				3A80ED9F2925D42A00444399 /* AdminView.swift in Sources */,
 				5BAF4F352919B72000900570 /* ContentView.swift in Sources */,
+				5B355A8F2933E5DB00B5561A /* Register.swift in Sources */,
 				5B8048DF29220A2D00245162 /* Answer.swift in Sources */,
 				5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */,
 				5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */,
@@ -394,6 +401,7 @@
 				5B8048D6292209A400245162 /* QuestionView.swift in Sources */,
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
 				5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */,
+				5B355A8D2933D3D400B5561A /* RegisterView.swift in Sources */,
 				5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */,
 				3A80EDA12925D5A200444399 /* UserDetailView.swift in Sources */,
 			);

@@ -41,7 +41,7 @@ struct UserDetailView: View {
                         
                         CourseTileProfileView(image: value.image, name: value.title
                         ).padding(.horizontal,30)
-                        }
+                    }
                     
                 }
             

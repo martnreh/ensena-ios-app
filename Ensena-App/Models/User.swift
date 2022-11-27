@@ -14,6 +14,7 @@ struct User: Decodable
     var fullName: String
     var courseProgress: Int
     var completedCourses = [ImageCourse]()
+    var image : String
     
     struct ImageCourse: Decodable, Identifiable {
         var id: UUID {
@@ -29,13 +30,15 @@ struct User: Decodable
         self.fullName = ""
         self.courseProgress = 0
         self.completedCourses = [ImageCourse(image: "", title: "")]
+        self.image = ""
     }
     
-    init(position: String, fullName: String, courseProgress: Int, completedCourses: [ImageCourse] ){
+    init(position: String, fullName: String, courseProgress: Int, completedCourses: [ImageCourse], image: String ){
         self.position = position
         self.fullName = fullName
         self.courseProgress = courseProgress
         self.completedCourses = completedCourses
+        self.image = image
     }
 
 }

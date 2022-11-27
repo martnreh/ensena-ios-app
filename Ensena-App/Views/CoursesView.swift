@@ -38,8 +38,6 @@ struct CoursesView: View {
         }}
             
         .onChange(of: userId, perform: { _ in
-            
-            print("Value Changed! REEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
             Task {
                 await courseModel.fetchCourseInfo(idUserFetch: userId)
         }
@@ -82,7 +80,7 @@ struct CourseView: View {
             AsyncImage(url: URL(string: image)) { imagen in
                 imagen.resizable()
             }  placeholder: {
-                Color("CadetBlue")
+                LoadingView(strong: true)
             }
             .frame(width: 128, height: 128)
             .clipShape(RoundedRectangle(cornerRadius: 20))
