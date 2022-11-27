@@ -24,12 +24,11 @@ var isAdminGlobal: Bool = false
 
 struct ContentView: View {
     
-    
-  //"6364357674dfad2101e1f078"
-    @State var userId : String = ""
+        @State var userId : String = ""
     @State var isLoggedIn : Bool = false
     @State var isAdmin : Bool = false
     @State var showingPrivacyAdvice : Bool = true
+    
     init() {
         UITabBar.appearance().backgroundColor = UIColor.white
 

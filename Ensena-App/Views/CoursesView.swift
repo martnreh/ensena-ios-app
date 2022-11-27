@@ -22,7 +22,7 @@ struct CoursesView: View {
             ScrollView{
                 ForEach(courseModel.allCourses){ course in
                         
-                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id)
+                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id, review: course.review)
                 
                 }
             }
@@ -71,6 +71,7 @@ struct CourseView: View {
     var max_grade : String
     var courseName: String
     var courseId: String
+    var review: Bool
     
     
     var body: some View {
@@ -105,24 +106,27 @@ struct CourseView: View {
                 
                 HStack{
                     Spacer()
-                    NavigationLink (destination: LearnView(courseId: courseId, courseName: courseName)) {
-
-                              Text("Aprende")
-                                  .fontWeight(.semibold)
-                                  .font(.system(size: 15))
-                                  .padding(8)
-                                  .foregroundColor(.white)
-                                  .background(Color("MiddleBlue"))
-                                  .cornerRadius(50)
-                                  
-                    }.navigationBarBackButtonHidden(true)
-                    .simultaneousGesture(TapGesture().onEnded{
-                       currentCourseId = courseId
-                        currentCourseTitle = courseName
-                        print("current Course")
-                        print(courseId)
-                    })
                     
+                    if(!review){
+                        NavigationLink (destination: LearnView(courseId: courseId, courseName: courseName)) {
+
+                                  Text("Aprende")
+                                      .fontWeight(.semibold)
+                                      .font(.system(size: 15))
+                                      .padding(8)
+                                      .foregroundColor(.white)
+                                      .background(Color("MiddleBlue"))
+                                      .cornerRadius(50)
+                                      
+                        }.navigationBarBackButtonHidden(true)
+                        .simultaneousGesture(TapGesture().onEnded{
+                           currentCourseId = courseId
+                            currentCourseTitle = courseName
+                            print("current Course")
+                            print(courseId)
+                        })
+                        
+                    }
                     
                     NavigationLink (destination: MainQuizView(cursoId: courseId)) {
                         
@@ -133,7 +137,7 @@ struct CourseView: View {
                                   .font(.system(size: 15))
                                   .padding(8)
                                   .foregroundColor(.white)
-                                  .background(Color("MidnightGreen"))
+                                  .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
                                   .cornerRadius(50)
                                   
                     }.navigationBarBackButtonHidden(true)
@@ -153,8 +157,10 @@ struct CourseView: View {
             Spacer()
             
         }.frame(width: 350, height: 120)
-            .background(Color("CadetBlue"))
+            .background(Color(!review ? "CadetBlue" : "MidnightGreen"))
             .cornerRadius(15)
         
     }
 }
+
+

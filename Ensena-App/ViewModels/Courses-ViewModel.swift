@@ -68,6 +68,7 @@ struct courseList: Decodable {
         var image: String
         var maxGrade: String
         var name: String
+        var review : Bool
         
     }
 }

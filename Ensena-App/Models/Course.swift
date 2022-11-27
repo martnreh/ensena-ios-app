@@ -16,9 +16,8 @@ struct Course: Identifiable, Codable{
     var description: String
     var grade: Int
     var max_grade : Int
+    var review : Bool
     
-    
-    static var exampleItem = Course(name: "Curso I", description: "Descripción", grade: 5, max_grade: 10)
-    
+
 }
 
