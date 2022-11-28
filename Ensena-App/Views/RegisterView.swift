@@ -17,60 +17,150 @@ struct RegisterView: View {
     @State var password: String = ""
     @State var r_password: String = ""
     @State var image: String = ""
+    let columns = [
+            GridItem(.flexible(minimum: 90), spacing: 20),
+            GridItem(.flexible(minimum: 90), spacing: 20),
+            
+        ]
     
     
 
     var body: some View {
         ScrollView{
             VStack{
-            
-            HStack{
                 Text("Registro")
-                    .font(.system(size: 12, weight: .light, design: .serif))
-                    .italic()
-                
-            }
-                
-                
-                VStack{
-            Text("Nombre")
-                        .font(.system(size: 12, weight: .light, design: .serif)).frame(alignment: .leading)
+                    .font(.system(size: 50))
+                        .bold()
+                        .padding(.bottom, 15)
+                        .foregroundColor(Color("Teal"))
+                Text("Al registrar una cuenta podrás guardar tu progreso en todos los diferentes cursos de Lenguaje de Señas Mexicanas que tenemos para ti ")
+                    .font(.system(size: 15))
+                        .padding(.bottom, 20)
+                        .foregroundColor(.gray)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+        
+                VStack(alignment: .leading){
+                    
+                    Group{
+                        Text("Nombre")
+                                .font(.callout)
+                                .bold()
+                    
+                        TextField("Nombre", text: $name)
+                                        .frame(height: 40)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("Apellido")
+                                .font(.callout)
+                                .bold()
+                        TextField("Apellido", text: $lastname)
+                                        .frame(height: 40)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("Posición Laboral")
+                                .font(.callout)
+                                .bold()
+                        TextField("Posición Laboral", text: $position)
+                                        .frame(height: 40)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("E-mail")
+                                .font(.callout)
+                                .bold()
+                        TextField("e-mail", text: $email)
+                                        .frame(height: 40)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("Nombre de Usario")
+                                .font(.callout)
+                                .bold()
+                        TextField("Usuario", text: $username)
+                                        .frame(height: 40)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
                         
-            TextField("Nombre", text: $name)
-                            .frame(height: 44)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
+                    }
+                
+                    
+                    Group{
+                        Text("Crear Contraseña")
+                                .font(.callout)
+                                .bold()
+                        TextField("Contraseña", text: $password)
+                                        .frame(height: 60)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("Confirmar Contraseña")
+                                .font(.callout)
+                                .bold()
+                        TextField("Contraseña", text: $r_password)
+                                        .frame(height: 60)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                                        .autocapitalization(.none)
+                        Text("Selecciona Imagen de Usuario")
+                                .font(.callout)
+                                .bold()
+                    }
+                    
                 }
-            TextField("Apellido", text: $lastname)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-            TextField("Posición Laboral", text: $position)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-            TextField("e-mail", text: $email)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-            TextField("usuario", text: $username)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-            TextField("contraseña", text: $password)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-            TextField("Repetir contraseña", text: $r_password)
-                            .frame(height: 60)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
+                
+                LazyVGrid(columns: columns) {
+                    
+                    VStack{
+                        AsyncImage(url: URL(string: "https://www.accreditedlanguage.com/wp-content/uploads/2016/08/sign-language.jpg")) { imagen in
+                            imagen.resizable()
+                        
+                        }  placeholder: {
+                            LoadingView(strong: false)
+
+                        }
+                        .frame(width: 120, height: 120)
+                            .cornerRadius(30)
+                            .padding(.bottom, 10)
+                        AsyncImage(url: URL(string: "https://acutrans.com/wp-content/uploads/2020/08/ASL.png")) { imagen in
+                            imagen.resizable()
+                        
+                        }  placeholder: {
+                            LoadingView(strong: false)
+
+                        }
+                        .frame(width: 120, height: 120)
+                            .cornerRadius(30)
+                            .padding(.bottom, 10)
+                        
+                    }
+                    VStack{
+                        AsyncImage(url: URL(string: "https://www.splashlearn.com/blog/wp-content/uploads/2021/12/ASL.jpg")) { imagen in
+                            imagen.resizable()
+                        
+                        }  placeholder: {
+                            LoadingView(strong: false)
+
+                        }
+                        .frame(width: 120, height: 120)
+                            .cornerRadius(30)
+                            .padding(.bottom, 10)
+                        AsyncImage(url: URL(string: "https://www.calliope-interpreters.org/sites/all/files/upload/asl.jpg")) { imagen in
+                            imagen.resizable()
+                        
+                        }  placeholder: {
+                            LoadingView(strong: false)
+
+                        }
+                        .frame(width: 120, height: 120)
+                            .cornerRadius(30)
+                            .padding(.bottom, 10)
+                        
+                    }
+
+                }
+                    
             
-            Spacer()
+            
             
             Button {
                 Task{
-                    print("hola")
+                    
                     await fetchRegister()
                     
                 }
@@ -90,11 +180,6 @@ struct RegisterView: View {
                     .padding(.top, 30)
                     .padding(.bottom, 20)
             }
-            
-            
-                                    
-            
-            
             
         }.padding(.horizontal, 30)
         }

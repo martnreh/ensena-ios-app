@@ -106,7 +106,7 @@ struct AdminView: View {
             
             
             
-            }
+            }.navigationBarTitle("Atrás")
                 
             }
             else{

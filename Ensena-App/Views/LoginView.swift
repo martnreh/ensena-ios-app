@@ -17,10 +17,12 @@ struct LoginView: View {
     @State var change: Bool = false
     @State var mensaje: String = ""
     @State var showAlertAgain: Bool = false
+    @State var infoLoaded : Int = 0
     @Binding var showingPrivacyAdvice : Bool
     @Binding var userId: String
     @Binding var isLoggedIn: Bool
     @Binding var isAdmin: Bool
+    
     
     
     var body: some View {
@@ -76,7 +78,9 @@ struct LoginView: View {
             
             
             Button {
+                
                 Task {
+                    infoLoaded = 2
                     
                     if (checkLenghtInputs() && !showAlertAgain && !showingPrivacyAdvice){
                         await fetchData()
@@ -99,7 +103,6 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .cornerRadius(20)
                     .padding(.top, 30)
-                    .padding(.bottom, 20)
             }.disabled(!checkLenghtInputs())
             .alert(isPresented: $showAlertAgain) {
                 Alert(
@@ -129,6 +132,46 @@ struct LoginView: View {
                        
                     )
             }
+                
+                VStack{
+                    if(infoLoaded == 2){
+                        ProgressView()
+                    }
+                    else{
+                    
+                        if(mensaje == "" && change && userId == ""){
+                            Text("Usuario inexistente")
+                                .foregroundColor(.red)
+                                .padding()
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                        else if (mensaje == "" && !change) {
+                            Text("")
+                                .foregroundColor(.white)
+                                .padding()
+                                .multilineTextAlignment(.center)
+                            
+                            
+                        }
+                        else if (mensaje != "") {
+                            Text(mensaje)
+                                .foregroundColor(.red)
+                                .padding()
+                                .multilineTextAlignment(.center)
+                            
+                        }
+                        
+                    }
+                    
+                    
+                    
+               
+                }.padding(.top, 10).onAppear(){
+                    infoLoaded = 0
+                }
+                
+                
             
             
             HStack{
@@ -146,35 +189,14 @@ struct LoginView: View {
                 })
                 
             }
-            .padding(.top, 40)
+            .padding(.top,10)
             
-            if (mensaje != "") {
-                VStack{
-                    
-                    Text(mensaje)
-                        .foregroundColor(.red)
-                        .padding()
-                        .multilineTextAlignment(.center)
-                    
-               
-            }.padding(.top, 30)
-            }
-            if (mensaje == "" && change) {
-                VStack{
-                    
-                    Text("Usuario inexistente")
-                        .foregroundColor(.red)
-                        .padding()
-                        .multilineTextAlignment(.center)
-                    
-               
-                }.padding(.top, 30)
-            }
+           
             
             
             
             Spacer()
-        }.navigationBarTitle("Log In")
+        }.navigationBarTitle("Atrás")
             
         }
             
@@ -207,10 +229,12 @@ struct LoginView: View {
                 let result = try? JSONDecoder().decode(Response.self, from: data)
                 
                 change = true
+                infoLoaded = 3
                 
                 if let result = result {
                     DispatchQueue.main.async {
                         if(result.login) {
+                            print(mensaje)
                             isLoggedIn = true
                             userId = result.userId
                             idUserGlobal = result.userId
@@ -228,6 +252,7 @@ struct LoginView: View {
                 
             
             }.resume()
+            
         }
     
     func checkLenghtInputs() -> Bool{

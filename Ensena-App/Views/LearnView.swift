@@ -177,9 +177,6 @@ struct CourseElement: View {
                 let myUrl = URL(string: image)!
                 let player = AVPlayer(url: myUrl)
                 
-                        
-                //if AVAsset(url: myUrl).isPlayable
-                
                 VideoPlayer(player: player)
                     .frame(height: 263)
                             .onAppear() {
