@@ -17,11 +17,15 @@ struct RegisterView: View {
     @State var password: String = ""
     @State var r_password: String = ""
     @State var image: String = ""
-    let columns = [
-            GridItem(.flexible(minimum: 90), spacing: 20),
-            GridItem(.flexible(minimum: 90), spacing: 20),
-            
-        ]
+    @State var infoLoaded : Int = 0
+
+    
+    
+    let image1 = "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg"
+    let image2 = "https://i.pinimg.com/originals/96/42/e9/9642e9a02271760271028a3bc4f2e69c.jpg"
+    let image3 = "https://i.pinimg.com/originals/32/32/73/323273cdf5b76b603eac387e1d1c6370.jpg"
+    let image4 = "https://i.pinimg.com/736x/54/c6/ac/54c6ac041f5f299a4100d50075090ad2.jpg"
+    @State var selectedImage = "Default"
     
     
 
@@ -33,7 +37,7 @@ struct RegisterView: View {
                         .bold()
                         .padding(.bottom, 15)
                         .foregroundColor(Color("Teal"))
-                Text("Al registrar una cuenta podrás guardar tu progreso en todos los diferentes cursos de Lenguaje de Señas Mexicanas que tenemos para ti ")
+                Text("Al registrar una cuenta podrás guardar tu progreso en todos los diferentes cursos de Lenguaje de Señas Mexicanas que tenemos para ti. ")
                     .font(.system(size: 15))
                         .padding(.bottom, 20)
                         .foregroundColor(.gray)
@@ -42,125 +46,213 @@ struct RegisterView: View {
                 VStack(alignment: .leading){
                     
                     Group{
-                        Text("Nombre")
+                        Text("Nombre *")
                                 .font(.callout)
                                 .bold()
                     
-                        TextField("Nombre", text: $name)
-                                        .frame(height: 40)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
-                        Text("Apellido")
+                        HStack {
+                            Image(systemName: "person")
+                            TextField("Nombre", text: $name).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
+                        Text("Apellido *")
                                 .font(.callout)
                                 .bold()
-                        TextField("Apellido", text: $lastname)
-                                        .frame(height: 40)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
+                        HStack {
+                            Image(systemName: "person")
+                            TextField("Apellido", text: $lastname).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
                         Text("Posición Laboral")
                                 .font(.callout)
                                 .bold()
-                        TextField("Posición Laboral", text: $position)
-                                        .frame(height: 40)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
+                        HStack {
+                            Image(systemName: "case")
+                            TextField("Posición Laboral", text: $position).autocapitalization(.none)
+                        } .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
+                        
                         Text("E-mail")
                                 .font(.callout)
                                 .bold()
-                        TextField("e-mail", text: $email)
-                                        .frame(height: 40)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
-                        Text("Nombre de Usario")
+                        HStack {
+                            Image(systemName: "envelope")
+                            TextField("ejemplo@gmail.com", text: $email).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
+                      
+                        Text("Nombre de Usuario *")
                                 .font(.callout)
                                 .bold()
-                        TextField("Usuario", text: $username)
-                                        .frame(height: 40)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
+                        HStack {
+                            Image(systemName: "person")
+                            TextField("Usuario", text: $username).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
                         
                     }
                 
                     
                     Group{
-                        Text("Crear Contraseña")
+                        Text("Crear Contraseña * (min. 8 letras)")
                                 .font(.callout)
                                 .bold()
-                        TextField("Contraseña", text: $password)
-                                        .frame(height: 60)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
-                        Text("Confirmar Contraseña")
+                        Text("Debe incluir: mayúscula,número y carácter especial ")
+                            .font(.system(size: 15))
+                                .foregroundColor(.gray)
+                        HStack {
+                            Image(systemName: "lock")
+                            TextField("Contraseña", text: $password).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
+                        
+                        Text("Confirmar Contraseña *")
                                 .font(.callout)
                                 .bold()
-                        TextField("Contraseña", text: $r_password)
-                                        .frame(height: 60)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .autocapitalization(.none)
-                        Text("Selecciona Imagen de Usuario")
-                                .font(.callout)
-                                .bold()
+                        HStack {
+                            Image(systemName: "lock")
+                            TextField("Contraseña", text: $r_password).autocapitalization(.none)
+                        }
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(Color("Teal")))
+                        
                     }
+                    
+                    Text("Selecciona una imagen para tu Perfil")
+                            .font(.callout)
+                            .bold()
                     
                 }
                 
-                LazyVGrid(columns: columns) {
-                    
-                    VStack{
-                        AsyncImage(url: URL(string: "https://www.accreditedlanguage.com/wp-content/uploads/2016/08/sign-language.jpg")) { imagen in
-                            imagen.resizable()
+                
+                VStack{
+                    HStack{
                         
-                        }  placeholder: {
-                            LoadingView(strong: false)
+                        Button {
+                            selectedImage = image1
+                        } label: {
+                            ZStack{
+                                AsyncImage(url: URL(string: image1)) { imagen in
+                                    imagen.resizable()
+                                
+                                }  placeholder: {
+                                    LoadingView(strong: false)
 
+                                }
+                                .frame(width: 120, height: 120)
+                                    .cornerRadius(30)
+                                    .padding(.horizontal, 20)
+                                
+                                if(image1 == selectedImage){
+                                
+                                    Rectangle()
+                                           .foregroundColor(.clear)
+                                           .background(LinearGradient(gradient: Gradient(colors: [.clear, Color("Teal")]), startPoint: .top, endPoint: .bottom))
+                                           .frame(width: 120, height: 120)
+                                           .cornerRadius(30)
+                                }
+                            }
                         }
-                        .frame(width: 120, height: 120)
-                            .cornerRadius(30)
-                            .padding(.bottom, 10)
-                        AsyncImage(url: URL(string: "https://acutrans.com/wp-content/uploads/2020/08/ASL.png")) { imagen in
-                            imagen.resizable()
                         
-                        }  placeholder: {
-                            LoadingView(strong: false)
+                        Button {
+                            selectedImage = image2
+                        } label: {
+                            ZStack{
+                                AsyncImage(url: URL(string: image2)) { imagen in
+                                    imagen.resizable()
+                                
+                                }  placeholder: {
+                                    LoadingView(strong: false)
 
+                                }
+                                .frame(width: 120, height: 120)
+                                    .cornerRadius(30)
+                                    .padding(.horizontal, 20)
+                                
+                                if(image2 == selectedImage){
+                                
+                                    Rectangle()
+                                           .foregroundColor(.clear)
+                                           .background(LinearGradient(gradient: Gradient(colors: [.clear, Color("Teal")]), startPoint: .top, endPoint: .bottom))
+                                           .frame(width: 120, height: 120)
+                                           .cornerRadius(30)
+                                }
+                            }
                         }
-                        .frame(width: 120, height: 120)
-                            .cornerRadius(30)
-                            .padding(.bottom, 10)
                         
-                    }
-                    VStack{
-                        AsyncImage(url: URL(string: "https://www.splashlearn.com/blog/wp-content/uploads/2021/12/ASL.jpg")) { imagen in
-                            imagen.resizable()
+                    }.padding(.bottom, 20)
+                    HStack{
                         
-                        }  placeholder: {
-                            LoadingView(strong: false)
+                        Button {
+                            selectedImage = image3
+                        } label: {
+                            ZStack{
+                                AsyncImage(url: URL(string: image3)) { imagen in
+                                    imagen.resizable()
+                                
+                                }  placeholder: {
+                                    LoadingView(strong: false)
 
+                                }
+                                .frame(width: 120, height: 120)
+                                    .cornerRadius(30)
+                                    .padding(.horizontal, 20)
+                                
+                                if(image3 == selectedImage){
+                                
+                                    Rectangle()
+                                           .foregroundColor(.clear)
+                                           .background(LinearGradient(gradient: Gradient(colors: [.clear, Color("Teal")]), startPoint: .top, endPoint: .bottom))
+                                           .frame(width: 120, height: 120)
+                                           .cornerRadius(30)
+                                }
+                            }
                         }
-                        .frame(width: 120, height: 120)
-                            .cornerRadius(30)
-                            .padding(.bottom, 10)
-                        AsyncImage(url: URL(string: "https://www.calliope-interpreters.org/sites/all/files/upload/asl.jpg")) { imagen in
-                            imagen.resizable()
                         
-                        }  placeholder: {
-                            LoadingView(strong: false)
+                        Button {
+                            selectedImage = image4
+                        } label: {
+                            ZStack{
+                                AsyncImage(url: URL(string: image4)) { imagen in
+                                    imagen.resizable()
+                                
+                                }  placeholder: {
+                                    LoadingView(strong: false)
 
+                                }
+                                .frame(width: 120, height: 120)
+                                    .cornerRadius(30)
+                                    .padding(.horizontal, 20)
+                                
+                                if(image4 == selectedImage){
+                                
+                                    Rectangle()
+                                           .foregroundColor(.clear)
+                                           .background(LinearGradient(gradient: Gradient(colors: [.clear, Color("Teal")]), startPoint: .top, endPoint: .bottom))
+                                           .frame(width: 120, height: 120)
+                                           .cornerRadius(30)
+                                }
+                            }
                         }
-                        .frame(width: 120, height: 120)
-                            .cornerRadius(30)
-                            .padding(.bottom, 10)
                         
-                    }
+                    }.padding(.bottom, 20)
+                   
 
                 }
+                
+               
                     
             
             
             
             Button {
                 Task{
-                    
+                    infoLoaded = 2
                     await fetchRegister()
                     
                 }
@@ -179,7 +271,55 @@ struct RegisterView: View {
                     .cornerRadius(20)
                     .padding(.top, 30)
                     .padding(.bottom, 20)
-            }
+            }.disabled(!checkRegisterInputs())
+                
+                VStack{
+                    if(infoLoaded != 0){
+                        if(infoLoaded == 2){
+                            ProgressView()
+                        }
+                        else{
+                        
+                            if(mensaje == "" ){
+                                Text("Usuario No registrable")
+                                    .foregroundColor(.red)
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+
+                            else if (mensaje != "" && mensaje != "True") {
+                                Text(mensaje)
+                                    .foregroundColor(.red)
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+                            else if (mensaje == "True") {
+                                Text("Usario Registrado con Éxito")
+                                    .foregroundColor(Color("Teal"))
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+                            else if (mensaje == "False") {
+                                Text("Nombre de Usuario ya utilizado")
+                                    .foregroundColor(Color("Teal"))
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+                            
+                        }
+                    
+                    }
+                    
+                    
+                    
+               
+                }.padding(.bottom, 30).onAppear(){
+                    infoLoaded = 0
+                }
             
         }.padding(.horizontal, 30)
         }
@@ -193,9 +333,8 @@ struct RegisterView: View {
             return
         }
         
-        //let body: [String: String] = ["name": name, "lastName": lastName, "position": position, "email" : email , "user" : user , "password" : password]
+        let body: [String: String] = ["name": name, "lastname": lastname, "position": position, "email" : email , "username" : username , "password" : password, "image": selectedImage]
         
-        let body: [String: String] = ["name": name, "lastname": lastname, "position": position, "email" : email, "username" : username, "password" : password, "image" : "default"]
         
         guard let finalBody = try? JSONEncoder().encode(body) else {
             return
@@ -213,7 +352,7 @@ struct RegisterView: View {
             
             let result = try? JSONDecoder().decode(Response.self, from: data)
             
-            
+            infoLoaded = 3
             if let result = result {
                 DispatchQueue.main.async {
                     if(result.login) {
@@ -234,14 +373,32 @@ struct RegisterView: View {
     
     func checkRegisterInputs() -> Bool{
         
-        if (name.count > 4 && password.count > 4 && password == r_password){
-            return true
+        if (name.count > 4 && lastname.count > 4 && password.count > 8 && username.count > 6 && password == r_password && validatePassword(password: password) ){
+    
+                return true
+           
+           
         }
         else{
             return false
         }
-        
-        
+                
+    }
+    
+    func validatePassword(password: String) -> Bool {
+        let capitalLetterRegEx  = ".*[A-Z]+.*"
+        let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
+        guard texttest.evaluate(with: password) else { return false }
+
+        let numberRegEx  = ".*[0-9]+.*"
+        let texttest1 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
+        guard texttest1.evaluate(with: password) else { return false }
+
+        let specialCharacterRegEx  = ".*[!&.^%$#@()/_*+-]+.*"
+        let texttest2 = NSPredicate(format:"SELF MATCHES %@", specialCharacterRegEx)
+        guard texttest2.evaluate(with: password) else { return false }
+
+        return true
     }
         
 }

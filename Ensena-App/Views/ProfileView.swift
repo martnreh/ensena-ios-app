@@ -162,13 +162,6 @@ struct ProfileHeader: View {
             .frame(width: 130, height: 130)
             .clipShape(RoundedRectangle(cornerRadius: 100))
 
-            /*
-            Image(image)
-                .resizable()
-                .scaledToFit()
-                .frame(width:130)
-                .padding(.top, 10)
-             */
             
             Text(fullName)
                 .foregroundColor(.white)

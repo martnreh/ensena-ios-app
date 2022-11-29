@@ -179,8 +179,8 @@ struct LoginView: View {
                                 .foregroundColor(.black)
                 NavigationLink (destination: RegisterView()) {
 
-                    Text("Registrarse")
-                                    .foregroundColor(.blue)
+                    Text("Registráte")
+                                    .foregroundColor(Color("Teal"))
                                     .underline()
                               
                 }.navigationBarBackButtonHidden(true)
