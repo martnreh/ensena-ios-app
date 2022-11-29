@@ -12,7 +12,7 @@ struct UserDetailView: View {
     
     var body: some View {
         VStack{
-            ProfileHeader(fullName: user.fullName, position: user.position, image: "ProfileImage")
+            ProfileHeader(fullName: user.fullName, position: user.position, image: user.image)
             
             VStack{
             HStack (){
