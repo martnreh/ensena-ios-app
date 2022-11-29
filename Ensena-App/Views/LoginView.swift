@@ -226,7 +226,7 @@ struct LoginView: View {
                 
                 guard let data = data, err == nil else {return}
                 
-                let result = try? JSONDecoder().decode(Response.self, from: data)
+                let result = try? JSONDecoder().decode(ResponseLogin.self, from: data)
                 
                 change = true
                 infoLoaded = 3
@@ -275,7 +275,7 @@ struct LoginView_Previews: PreviewProvider {
     }
 }
 
-struct Response: Codable
+struct ResponseLogin: Codable
 {
     var userId: String
     var login: Bool

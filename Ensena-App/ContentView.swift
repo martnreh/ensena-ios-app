@@ -82,7 +82,11 @@ struct ContentView: View {
                 Text("Diccionario")
             }
             
-        }.accentColor(Color("MidnightGreen"))
+        }.accentColor(Color("MidnightGreen")).onAppear {
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        }.onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        }
         
     }
        
