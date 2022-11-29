@@ -195,7 +195,7 @@ struct RegisterView: View {
         
         //let body: [String: String] = ["name": name, "lastName": lastName, "position": position, "email" : email , "user" : user , "password" : password]
         
-        let body: [String: String] = ["name": "Martin", "lastname": "barrientos", "position": "software", "email" : "a01570656@tec.mx" , "username" : "a01570656" , "password" : "12345678", "image" : "Default"]
+        let body: [String: String] = ["name": name, "lastname": lastname, "position": position, "email" : email, "username" : username, "password" : password, "image" : "default"]
         
         guard let finalBody = try? JSONEncoder().encode(body) else {
             return

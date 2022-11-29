@@ -14,7 +14,7 @@ struct AdminView: View {
     @State private var searchText = ""
     @State var infoLoaded: Bool = false
     
-    @State var admin : AdminInfo = AdminInfo(fullName: "", numUsers: "", userList: [AdminInfo.userData(userId: "", courseProgress: 0, fullName: "")])
+    @State var admin : AdminInfo = AdminInfo(fullName: "", numUsers: "", userList: [AdminInfo.userData(userId: "", courseProgress: 0, fullName: "", image: "")], image: "")
 
     var body: some View {
         NavigationView{
@@ -24,13 +24,16 @@ struct AdminView: View {
 
             VStack{
                 HStack{
-                Image("ProfileImage")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width:60)
-                    .padding(.top, 10)
-                    .padding(.trailing, 25)
-                
+                    
+                    AsyncImage(url: URL(string: admin.image)) { imagen in
+                        imagen.resizable()
+                    }  placeholder: {
+                        LoadingView(strong: true)
+                    }
+                    .frame(width: 100, height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 100))
+                    
+              
                     VStack{
                         Text(admin.fullName)
                     .foregroundColor(.white)
@@ -70,7 +73,7 @@ struct AdminView: View {
                      usuario in
                     NavigationLink(destination: UserDetailView(detailId: usuario.userId)){
                     
-                    AdminUserView(name: usuario.fullName, progress: usuario.courseProgress)
+                        AdminUserView(name: usuario.fullName, progress: usuario.courseProgress, image: usuario.image)
                     }
                     
                 }
@@ -158,17 +161,21 @@ struct AdminUserView: View{
     
     var name: String
     var progress: Int
+    var image: String
     
     
     var body: some View {
     
 HStack {
-    Image("ProfileImage")
-        .resizable()
-        .scaledToFit()
-        .frame(width: 60)
-        .padding(.horizontal, 15)
-        .padding(.trailing,2)
+
+    AsyncImage(url: URL(string: image)) { imagen in
+        imagen.resizable()
+    }  placeholder: {
+        LoadingView(strong: true)
+    }
+    .frame(width: 60, height: 60)
+    .clipShape(RoundedRectangle(cornerRadius: 100))
+    .padding(.horizontal)
 
     VStack (alignment: .leading){
     Text(name)
@@ -212,6 +219,7 @@ struct AdminInfo: Decodable  {
     var fullName: String
     var numUsers: String
     var userList: [userData]
+    var image: String
     
     struct userData: Decodable, Identifiable{
         var id: UUID{
@@ -220,6 +228,7 @@ struct AdminInfo: Decodable  {
         var userId: String
         var courseProgress: Int
         var fullName: String
+        var image: String
     }
         
     }

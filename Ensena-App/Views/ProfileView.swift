@@ -30,7 +30,7 @@ struct ProfileView: View {
             if infoLoaded {
             VStack{
                 
-                ProfileHeader(fullName: user.fullName, position: user.position,image: "ProfileImage")
+                ProfileHeader(fullName: user.fullName, position: user.position,image: user.image)
 
                 VStack{
                 HStack (){
@@ -153,11 +153,22 @@ struct ProfileHeader: View {
     
     var body: some View {
         VStack{
+            
+            AsyncImage(url: URL(string: image)) { imagen in
+                imagen.resizable()
+            }  placeholder: {
+                LoadingView(strong: true)
+            }
+            .frame(width: 130, height: 130)
+            .clipShape(RoundedRectangle(cornerRadius: 100))
+
+            /*
             Image(image)
                 .resizable()
                 .scaledToFit()
                 .frame(width:130)
                 .padding(.top, 10)
+             */
             
             Text(fullName)
                 .foregroundColor(.white)
