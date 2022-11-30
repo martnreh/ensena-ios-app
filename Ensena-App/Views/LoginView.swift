@@ -82,13 +82,11 @@ struct LoginView: View {
                 Task {
                     infoLoaded = 2
                     
-                    if (checkLenghtInputs() && !showAlertAgain && !showingPrivacyAdvice){
+                    if (checkLenghtInputs()){
                         await fetchData()
                         
                     }
-                    if(showingPrivacyAdvice && !showAlertAgain){
-                        showAlertAgain = true
-                    }
+                    
                     
                 }
                 
@@ -104,34 +102,7 @@ struct LoginView: View {
                     .cornerRadius(20)
                     .padding(.top, 30)
             }.disabled(!checkLenghtInputs())
-            .alert(isPresented: $showAlertAgain) {
-                Alert(
-                    title:
-                        Text("Aviso de Privacidad").font(.system(size: 15, weight: .light)),
-                        message: Text("De conformidad con lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, Jess Lefts pones a su disposición el siguiente aviso de privacidad.\n\nPablo Navarro Zepeda, es responsable del uso y protección de sus datos personales, en este sentido y atendiendo las obligaciones legales establecidas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, a través de este instrumento se informa a los titulares de los datos, la información que de ellos se recaba y los fines se le darán a dicha información.\n\nAdemás de lo anterior, informamos a usted que\nPablo Navarro Zepeda, tiene su domicilio ubicado en:\nPaseo Belinda 2901, Int.9, 66260, San Pedro Garza García, Nuevo León, México\n\nLos datos personales que recabamos de usted serán utilizados para las siguientes finalidades, las cuales son necesarias para concretar nuestra relación con usted, así como para atender los servicios y/o pedidos que solicite:\n\nMostrar información relacionada con el usuario.\nPoder identificar de forma única cada usuario.\nComo administrador, poder tener una noción del progreso de cada usuario.\n\nPara llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:\n\nNombre, apellido, correo electrónico, puesto, nombre de usuario y contraseña.\n\nPor otra parte, informamos a usted, que sus datos personales serán compartidos con las siguientes autoridades, empresas, organizaciones o personas distintas a nosotros:\n\nJohn Deere,\nInstituto Tecnológico de Estudios Superiores de Monterrey.\n\nSu información personal será compartida exclusivamente para los fines que a continuación se mencionan:\n\nMonitorear el progreso o avance de los usuarios.\nPara obtener estadísticas que evalúen el producto.\n\nUsted tiene en todo momento el derecho de conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones dl uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); de igual manera, tiene derecho a que su información se elimine de nuestros registros o así como también a oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.\n\nPara el ejercicio de cualquiera de los derechos ARCO, se deberá presentar la solicitud respectiva a través del siguiente correo electrónico:\na012284116@tec.mx\n\nLo anterior también servirá para conocer el procedimiento y requisitos para el ejercicio de los derechos ARCO.\n\nEn todo caso la respuesta a la solicitud se dará en el siguiente plazo: 3 días hábiles.\n\nLos datos de contacto de la persona o departamento de datos personales, que esta a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes.\n\na) Nombre del responsable: Pablo Navarro Zepeda\nb) Domicilio: Paseo Belinda 2901, Int.9, 66260, San Pedro Garza García, Nuevo León, México\nc) Teléfono: 8120741882\nd) Correo electrónico: a01284116@tec.mx\n\nCabe mencionar, que en cualquier momento usted puede revocar su consentimiento para el uso de sus datos personales Del mismo modo, usted puede revocar el consentimiento que en su caso, nos haya otorgado para el tratamiento de sus datos personales.\n\nAsimismo, usted deberá considerar que para ciertos fines la revocación de su consentimiento implicará que no podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.\n\nPara revocar el consentimiento que usted otorga en este acto o para limitar su divulgación, se deberá presentar la solicitud respectiva a través del siguiente correo electrónico:\n\na01284116@tec.mx\n\nDel mismo modo, podrá solicitar la información para conocer el procedimiento y requisitos para la revocación del consentimiento, así como limitar el uso y divulgación de su información personal.\n\nEn cualquier caso, la respuesta a las peticiones se dará a conocer en el siguiente plazo: 3 días hábiles.\n\nÚltima actualización: 26/11/2022").font(.system(size: 15, weight: .light)),
-                    
-                        primaryButton: .default(Text("Aceptar").font(.system(size: 15, weight: .light)), action: {
-                            //Mostrar unica vez aviso de privacidad
-                            
-                            Task{
-                                showAlertAgain = false
-                                showingPrivacyAdvice = false
-                                await fetchData()
-                                
-                            }
-                            
-                        }),
-                    
-                        secondaryButton: .destructive(Text("Negar").font(.system(size: 15, weight: .light))) {
-                            
-                            Task{
-                                showingPrivacyAdvice = true
-                                
-                            }
-                        }
-                       
-                    )
-            }
+            
                 
                 VStack{
                     if(infoLoaded == 2){
