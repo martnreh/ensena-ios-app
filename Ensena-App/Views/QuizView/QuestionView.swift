@@ -66,7 +66,7 @@ struct QuestionView: View {
                 }  placeholder: {
                     Color("CadetBlue")
                 }
-                .frame(width: 310, height: 250)
+                .frame(width: 320, height: 240)
                     .cornerRadius(20)
                     .padding()
                     
