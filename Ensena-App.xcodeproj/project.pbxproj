@@ -9,6 +9,25 @@
 /* Begin PBXBuildFile section */
 		3A80ED9F2925D42A00444399 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80ED9E2925D42A00444399 /* AdminView.swift */; };
 		3A80EDA12925D5A200444399 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80EDA02925D5A200444399 /* UserDetailView.swift */; };
+		3A93BFE62A0155F900361C4F /* j.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFE52A0155F900361C4F /* j.m4v */; };
+		3A93BFE82A0156F800361C4F /* Cuerpo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFE72A0156F800361C4F /* Cuerpo.plist */; };
+		3A93BFED2A01588200361C4F /* cabeza.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFE92A01588200361C4F /* cabeza.m4v */; };
+		3A93BFEE2A01588200361C4F /* cara.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFEA2A01588200361C4F /* cara.m4v */; };
+		3A93BFEF2A01588200361C4F /* boca.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFEB2A01588200361C4F /* boca.m4v */; };
+		3A93BFF02A01588200361C4F /* corazon.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFEC2A01588200361C4F /* corazon.m4v */; };
+		3A93BFF92A01592800361C4F /* k.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFF82A01592800361C4F /* k.m4v */; };
+		3A93C0062A015BA700361C4F /* Quien.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFFD2A015BA600361C4F /* Quien.m4v */; };
+		3A93C0072A015BA700361C4F /* Donde.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFFE2A015BA600361C4F /* Donde.m4v */; };
+		3A93C0082A015BA700361C4F /* Porque.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93BFFF2A015BA600361C4F /* Porque.m4v */; };
+		3A93C0092A015BA700361C4F /* Cual.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0002A015BA600361C4F /* Cual.m4v */; };
+		3A93C00A2A015BA700361C4F /* Cuanto.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0012A015BA600361C4F /* Cuanto.m4v */; };
+		3A93C00B2A015BA700361C4F /* Como.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0022A015BA600361C4F /* Como.m4v */; };
+		3A93C00C2A015BA700361C4F /* Que.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0032A015BA700361C4F /* Que.m4v */; };
+		3A93C00D2A015BA700361C4F /* Paraque.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0042A015BA700361C4F /* Paraque.m4v */; };
+		3A93C00E2A015BA700361C4F /* Cuando.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C0052A015BA700361C4F /* Cuando.m4v */; };
+		3A93C0102A015BE700361C4F /* Preguntas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C00F2A015BE700361C4F /* Preguntas.plist */; };
+		3ABEAB5B2A008EB000C98650 /* Abecedario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABEAB5A2A008EB000C98650 /* Abecedario.plist */; };
+		3ACC277729FF169500B22B3B /* Cursos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACC277629FF169500B22B3B /* Cursos.plist */; };
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
@@ -59,6 +78,26 @@
 /* Begin PBXFileReference section */
 		3A80ED9E2925D42A00444399 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
 		3A80EDA02925D5A200444399 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		3A93BFE52A0155F900361C4F /* j.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = j.m4v; sourceTree = "<group>"; };
+		3A93BFE72A0156F800361C4F /* Cuerpo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cuerpo.plist; sourceTree = "<group>"; };
+		3A93BFE92A01588200361C4F /* cabeza.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabeza.m4v; sourceTree = "<group>"; };
+		3A93BFEA2A01588200361C4F /* cara.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = cara.m4v; sourceTree = "<group>"; };
+		3A93BFEB2A01588200361C4F /* boca.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = boca.m4v; sourceTree = "<group>"; };
+		3A93BFEC2A01588200361C4F /* corazon.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = corazon.m4v; sourceTree = "<group>"; };
+		3A93BFF82A01592800361C4F /* k.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = k.m4v; sourceTree = "<group>"; };
+		3A93BFFD2A015BA600361C4F /* Quien.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quien.m4v; sourceTree = "<group>"; };
+		3A93BFFE2A015BA600361C4F /* Donde.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Donde.m4v; sourceTree = "<group>"; };
+		3A93BFFF2A015BA600361C4F /* Porque.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Porque.m4v; sourceTree = "<group>"; };
+		3A93C0002A015BA600361C4F /* Cual.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cual.m4v; sourceTree = "<group>"; };
+		3A93C0012A015BA600361C4F /* Cuanto.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cuanto.m4v; sourceTree = "<group>"; };
+		3A93C0022A015BA600361C4F /* Como.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Como.m4v; sourceTree = "<group>"; };
+		3A93C0032A015BA700361C4F /* Que.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Que.m4v; sourceTree = "<group>"; };
+		3A93C0042A015BA700361C4F /* Paraque.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paraque.m4v; sourceTree = "<group>"; };
+		3A93C0052A015BA700361C4F /* Cuando.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cuando.m4v; sourceTree = "<group>"; };
+		3A93C00F2A015BE700361C4F /* Preguntas.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Preguntas.plist; sourceTree = "<group>"; };
+		3ABEAB5A2A008EB000C98650 /* Abecedario.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Abecedario.plist; sourceTree = "<group>"; };
+		3ACC277629FF169500B22B3B /* Cursos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cursos.plist; sourceTree = "<group>"; };
+		3ACC277829FF1D9E00B22B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -117,6 +156,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A93BFF32A0158D900361C4F /* MediaABC */ = {
+			isa = PBXGroup;
+			children = (
+				3A93BFF82A01592800361C4F /* k.m4v */,
+				3A93BFE52A0155F900361C4F /* j.m4v */,
+			);
+			path = MediaABC;
+			sourceTree = "<group>";
+		};
+		3A93BFF62A0158EC00361C4F /* MediaCuerpo */ = {
+			isa = PBXGroup;
+			children = (
+				3A93BFEB2A01588200361C4F /* boca.m4v */,
+				3A93BFE92A01588200361C4F /* cabeza.m4v */,
+				3A93BFEA2A01588200361C4F /* cara.m4v */,
+				3A93BFEC2A01588200361C4F /* corazon.m4v */,
+			);
+			path = MediaCuerpo;
+			sourceTree = "<group>";
+		};
+		3A93BFFC2A015ADE00361C4F /* MediaPreguntas */ = {
+			isa = PBXGroup;
+			children = (
+				3A93C0022A015BA600361C4F /* Como.m4v */,
+				3A93C0002A015BA600361C4F /* Cual.m4v */,
+				3A93C0052A015BA700361C4F /* Cuando.m4v */,
+				3A93C0012A015BA600361C4F /* Cuanto.m4v */,
+				3A93BFFE2A015BA600361C4F /* Donde.m4v */,
+				3A93C0042A015BA700361C4F /* Paraque.m4v */,
+				3A93BFFF2A015BA600361C4F /* Porque.m4v */,
+				3A93C0032A015BA700361C4F /* Que.m4v */,
+				3A93BFFD2A015BA600361C4F /* Quien.m4v */,
+			);
+			path = MediaPreguntas;
+			sourceTree = "<group>";
+		};
 		5B35A369291D47EC00BA8735 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +263,10 @@
 		5BAF4F312919B72000900570 /* Ensena-App */ = {
 			isa = PBXGroup;
 			children = (
+				3A93BFFC2A015ADE00361C4F /* MediaPreguntas */,
+				3A93BFF62A0158EC00361C4F /* MediaCuerpo */,
+				3A93BFF32A0158D900361C4F /* MediaABC */,
+				3ACC277829FF1D9E00B22B3B /* Info.plist */,
 				5BAF4F342919B72000900570 /* ContentView.swift */,
 				5B35A369291D47EC00BA8735 /* Views */,
 				5BAF4F712919B9C800900570 /* Models */,
@@ -196,6 +275,10 @@
 				5BAF4F702919B9A100900570 /* ViewModels */,
 				5BAF4F362919B72200900570 /* Assets.xcassets */,
 				5BAF4F382919B72200900570 /* Preview Content */,
+				3ACC277629FF169500B22B3B /* Cursos.plist */,
+				3ABEAB5A2A008EB000C98650 /* Abecedario.plist */,
+				3A93BFE72A0156F800361C4F /* Cuerpo.plist */,
+				3A93C00F2A015BE700361C4F /* Preguntas.plist */,
 			);
 			path = "Ensena-App";
 			sourceTree = "<group>";
@@ -353,7 +436,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A93C0062A015BA700361C4F /* Quien.m4v in Resources */,
+				3A93C00E2A015BA700361C4F /* Cuando.m4v in Resources */,
+				3A93C0072A015BA700361C4F /* Donde.m4v in Resources */,
+				3A93BFF92A01592800361C4F /* k.m4v in Resources */,
+				3A93BFF02A01588200361C4F /* corazon.m4v in Resources */,
+				3A93C0102A015BE700361C4F /* Preguntas.plist in Resources */,
+				3A93BFEE2A01588200361C4F /* cara.m4v in Resources */,
 				5BAF4F3A2919B72200900570 /* Preview Assets.xcassets in Resources */,
+				3ABEAB5B2A008EB000C98650 /* Abecedario.plist in Resources */,
+				3A93C00B2A015BA700361C4F /* Como.m4v in Resources */,
+				3A93BFE62A0155F900361C4F /* j.m4v in Resources */,
+				3A93C00D2A015BA700361C4F /* Paraque.m4v in Resources */,
+				3ACC277729FF169500B22B3B /* Cursos.plist in Resources */,
+				3A93C00A2A015BA700361C4F /* Cuanto.m4v in Resources */,
+				3A93C0082A015BA700361C4F /* Porque.m4v in Resources */,
+				3A93BFEF2A01588200361C4F /* boca.m4v in Resources */,
+				3A93C0092A015BA700361C4F /* Cual.m4v in Resources */,
+				3A93BFE82A0156F800361C4F /* Cuerpo.plist in Resources */,
+				3A93C00C2A015BA700361C4F /* Que.m4v in Resources */,
+				3A93BFED2A01588200361C4F /* cabeza.m4v in Resources */,
 				5BAF4F372919B72200900570 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,10 +665,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ensena-App/Preview Content\"";
-				DEVELOPMENT_TEAM = 52G8X4NULG;
+				DEVELOPMENT_TEAM = 2TX9W9SS3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ensena-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -595,10 +697,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ensena-App/Preview Content\"";
-				DEVELOPMENT_TEAM = 52G8X4NULG;
+				DEVELOPMENT_TEAM = 2TX9W9SS3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ensena-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

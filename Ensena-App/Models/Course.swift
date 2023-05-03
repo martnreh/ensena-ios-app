@@ -17,7 +17,6 @@ struct Course: Identifiable, Codable{
     var grade: Int
     var max_grade : Int
     var review : Bool
-    
 
 }
 

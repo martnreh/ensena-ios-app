@@ -12,8 +12,6 @@ extension CoursesView {
         @Published var allCourses: [courseList.myCourse] = []
         @Published var cursoActual: String = ""
 
-        
-        
         func fetchCourseInfo(idUserFetch: String) async {
            
             
@@ -24,7 +22,6 @@ extension CoursesView {
             else{
                 path = "http://127.0.0.1:5000/course/all"
             }
-
 
             
             guard let url = URL(string: isAdminGlobal ? path: (path + idUserFetch)) else {fatalError("Missing URL")}
@@ -62,7 +59,7 @@ struct courseList: Decodable {
     var courses: [myCourse]
     
     struct myCourse: Decodable, Identifiable {
-        
+    
         var grade: String
         var id: String
         var image: String
@@ -72,3 +69,5 @@ struct courseList: Decodable {
         
     }
 }
+
+

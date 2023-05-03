@@ -8,8 +8,6 @@
 import SwiftUI
 
 
-
-
 var currentCourseId: String = "6364360774dfad2101e1f079"
 //userID
 //6364357674dfad2101e1f078
@@ -70,7 +68,7 @@ struct ContentView: View {
             }
             
             
-            CoursesView(userId: $userId).tabItem{
+            CoursesView().tabItem{
                 Image(systemName: "hand.point.up.left")
                 Text("Cursos")
             }

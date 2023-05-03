@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
+    
     @State var mensaje: String = ""
     @State var name: String = ""
     @State var lastname: String = ""
@@ -18,8 +19,6 @@ struct RegisterView: View {
     @State var r_password: String = ""
     @State var infoLoaded : Int = 0
     @State var showAlert : Bool = false
-
-    
     
     let image1 = "dog"
     let image2 = "cat"

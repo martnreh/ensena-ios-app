@@ -56,7 +56,7 @@ struct DictionaryView: View {
                     
                    
                     
-                    NavigationLink(destination: LearnView(courseId: word.courseId, courseName:word.courseName)){
+                    NavigationLink(destination: LearnView(courseName:word.courseName)){
 
                         WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: word.courseId, userId: $userId)
 

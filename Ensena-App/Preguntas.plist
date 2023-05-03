@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Como</string>
+		<key>word</key>
+		<string>¿Cómo?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Cual</string>
+		<key>word</key>
+		<string>¿Cuál?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Cuando</string>
+		<key>word</key>
+		<string>¿Cuándo?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Cuanto</string>
+		<key>word</key>
+		<string>¿Cuánto?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Donde</string>
+		<key>word</key>
+		<string>¿Dónde?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Paraque</string>
+		<key>word</key>
+		<string>¿Para qué?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Porque</string>
+		<key>word</key>
+		<string>¿Por qué?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Que</string>
+		<key>word</key>
+		<string>¿Qué?</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Quien</string>
+		<key>word</key>
+		<string>¿Quién?</string>
+	</dict>
+</array>
+</plist>

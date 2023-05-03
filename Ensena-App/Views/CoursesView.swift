@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-
-
 struct CoursesView: View {
         
-    @StateObject var courseModel: CoursesViewModel = CoursesViewModel()
-    @Binding var userId: String
+   // @StateObject var courseModel: CoursesViewModel = CoursesViewModel()
+   // @Binding var userId: String
+    @State var listaCursos: [Curso] = []
 
     var body: some View {
 
@@ -20,11 +19,14 @@ struct CoursesView: View {
         VStack{
 
             ScrollView{
-                ForEach(courseModel.allCourses){ course in
+                ForEach(listaCursos){ c in
                         
-                    CourseView(image: course.image, grade: course.grade, max_grade: course.maxGrade, courseName: course.name, courseId: course.id, review: course.review)
+                    CourseView(image: c.image, courseName: c.name, courseId: c.id, review: c.review)
                 
                 }
+            }
+            .onAppear{
+                listaCursos = cargaInfo()
             }
 
             Spacer()
@@ -32,20 +34,8 @@ struct CoursesView: View {
             
        
         }.navigationBarTitle("Mis Cursos")
-        .onAppear {
-            Task {
-                await courseModel.fetchCourseInfo(idUserFetch: userId)
-        }}
-            
-        .onChange(of: userId, perform: { _ in
-            Task {
-                await courseModel.fetchCourseInfo(idUserFetch: userId)
-        }
-            
-        })
-            
         
-            
+    
     
     }
     }
@@ -53,12 +43,7 @@ struct CoursesView: View {
   
 }
 
-struct CoursesView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoursesView(userId: .constant(""))
-        
-    }
-}
+
 
 
 
@@ -67,8 +52,6 @@ struct CoursesView_Previews: PreviewProvider {
 struct CourseView: View {
     
     var image: String
-    var grade: String
-    var max_grade : String
     var courseName: String
     var courseId: String
     var review: Bool
@@ -78,25 +61,15 @@ struct CourseView: View {
         
         HStack{
             
-            AsyncImage(url: URL(string: image)) { imagen in
-                imagen.resizable()
-            }  placeholder: {
-                LoadingView(strong: true)
-            }
-            .frame(width: 128, height: 128)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            Image(image)
+                .resizable()
+                .frame(width: 128, height: 128)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
  
             
             VStack (spacing: 8){
                 
-                if (grade != "-1"){
-                    HStack{
-                        Spacer()
-                        Text( "\(grade) / \(max_grade)")
-                            .foregroundColor(.white)
-                        
-                    }
-                }
+
                 
                 Text(courseName)
                     .font(.system(.title))
@@ -108,7 +81,7 @@ struct CourseView: View {
                     Spacer()
                     
                     if(!review){
-                        NavigationLink (destination: LearnView(courseId: courseId, courseName: courseName)) {
+                        NavigationLink(destination: LearnView(courseName: courseName)) {
 
                                   Text("Aprende")
                                       .fontWeight(.semibold)
@@ -118,19 +91,11 @@ struct CourseView: View {
                                       .background(Color("MiddleBlue"))
                                       .cornerRadius(50)
                                       
-                        }.navigationBarBackButtonHidden(true)
-                        .simultaneousGesture(TapGesture().onEnded{
-                           currentCourseId = courseId
-                            currentCourseTitle = courseName
-                            print("current Course")
-                            print(courseId)
-                        })
+                        }
                         
                     }
                     
-                    NavigationLink (destination: MainQuizView(cursoId: courseId)) {
-                        
-                        
+                   VStack {
 
                               Text("Practica")
                                   .fontWeight(.semibold)
@@ -140,11 +105,7 @@ struct CourseView: View {
                                   .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
                                   .cornerRadius(50)
                                   
-                    }.navigationBarBackButtonHidden(true)
-                    .simultaneousGesture(TapGesture().onEnded{
-                        currentCourseId = courseId
-                        currentCourseTitle = courseName
-                    })
+                    }
                     
                     Spacer()
       
@@ -164,3 +125,43 @@ struct CourseView: View {
 }
 
 
+
+
+    class Curso: Codable, Identifiable {
+    
+        var id: String
+        var image: String
+        var name: String
+        var review : Bool
+        
+        init(id: String, image: String, name: String, review: Bool) {
+            self.id = id
+            self.image = image
+            self.name = name
+            self.review = review
+        }
+        
+    }
+
+
+func cargaInfo() -> [Curso] {
+    var ruta: String?
+    
+    ruta = Bundle.main.path(forResource: "Cursos", ofType: "plist")
+    
+    var listaCursos = [Curso]()
+    
+    do {
+        var miurl = URL(fileURLWithPath: ruta ?? "")
+        print(miurl)
+        let data = try Data.init(contentsOf: miurl)
+        
+        print(data)
+        listaCursos = try PropertyListDecoder().decode([Curso].self, from: data)
+    }
+    catch {
+        print("Error al cargar archivo")
+    }
+    
+    return listaCursos
+}

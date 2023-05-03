@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>boca</string>
+		<key>word</key>
+		<string>Boca</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>cabeza</string>
+		<key>word</key>
+		<string>Cabeza</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>cara</string>
+		<key>word</key>
+		<string>Cara</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>corazon</string>
+		<key>word</key>
+		<string>Corazón</string>
+	</dict>
+</array>
+</plist>
