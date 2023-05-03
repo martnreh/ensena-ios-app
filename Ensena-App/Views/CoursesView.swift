@@ -69,8 +69,6 @@ struct CourseView: View {
             
             VStack (spacing: 8){
                 
-
-                
                 Text(courseName)
                     .font(.system(.title))
                     .foregroundColor(.white)
