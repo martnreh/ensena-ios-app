@@ -44,11 +44,6 @@ struct CoursesView: View {
 }
 
 
-
-
-
-
-
 struct CourseView: View {
     
     var image: String
