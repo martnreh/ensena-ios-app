@@ -149,7 +149,6 @@ func cargaInfo() -> [Curso] {
         print(miurl)
         let data = try Data.init(contentsOf: miurl)
         
-        print(data)
         listaCursos = try PropertyListDecoder().decode([Curso].self, from: data)
     }
     catch {

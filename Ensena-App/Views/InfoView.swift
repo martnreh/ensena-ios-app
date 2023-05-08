@@ -9,7 +9,14 @@ import SwiftUI
 
 struct InfoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Bienvenido a Enseña!")
+            Image("MainLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200)
+        }
+        
     }
 }
 

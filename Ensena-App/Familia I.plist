@@ -3,524 +3,132 @@
 <plist version="1.0">
     <array>
         <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Abuela </string>
-            <key> word </key>
-            <string> Abuela </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Abuelo </string>
-            <key> word </key>
-            <string> Abuelo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Adulto </string>
-            <key> word </key>
-            <string> Adulto </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Amante </string>
-            <key> word </key>
-            <string> Amante </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Amiga </string>
-            <key> word </key>
-            <string> Amiga </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Amigo </string>
-            <key> word </key>
-            <string> Amigo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Anciano </string>
-            <key> word </key>
-            <string> Anciano </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Bebe </string>
-            <key> word </key>
-            <string> Bebe </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Bisabuela </string>
-            <key> word </key>
-            <string> Bisabuela </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Bisabuelo </string>
-            <key> word </key>
-            <string> Bisabuelo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Bisnieta </string>
-            <key> word </key>
-            <string> Bisnieta </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Bisnieto </string>
-            <key> word </key>
-            <string> Bisnieto </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Ciego </string>
-            <key> word </key>
-            <string> Ciego </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Companero </string>
-            <key> word </key>
-            <string> Companero </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Cunada </string>
-            <key> word </key>
-            <string> Cunada </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Cunado </string>
-            <key> word </key>
-            <string> Cunado </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Divorciado </string>
-            <key> word </key>
-            <string> Divorciado </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Esposa </string>
-            <key> word </key>
-            <string> Esposa </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Esposo </string>
-            <key> word </key>
-            <string> Esposo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hermana </string>
-            <key> word </key>
-            <string> Hermana </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hermano </string>
-            <key> word </key>
-            <string> Hermano </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hija </string>
-            <key> word </key>
-            <string> Hija </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hijastra </string>
-            <key> word </key>
-            <string> Hijastra </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hijastro </string>
-            <key> word </key>
-            <string> Hijastro </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hijo </string>
-            <key> word </key>
-            <string> Hijo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Hombre </string>
-            <key> word </key>
-            <string> Hombre </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Huerfano </string>
-            <key> word </key>
-            <string> Huerfano </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Madrastra </string>
-            <key> word </key>
-            <string> Madrastra </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Madrina </string>
-            <key> word </key>
-            <string> Madrina </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Mama </string>
-            <key> word </key>
-            <string> Mama </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Matrimonio </string>
-            <key> word </key>
-            <string> Matrimonio </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Mediahermana </string>
-            <key> word </key>
-            <string> Mediahermana </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Mediohermano </string>
-            <key> word </key>
-            <string> Mediohermano </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Mujer </string>
-            <key> word </key>
-            <string> Mujer </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Nieta </string>
-            <key> word </key>
-            <string> Nieta </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Nieto </string>
-            <key> word </key>
-            <string> Nieto </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Nina </string>
-            <key> word </key>
-            <string> Nina </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Nino </string>
-            <key> word </key>
-            <string> Nino </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Novia </string>
-            <key> word </key>
-            <string> Novia </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Novio </string>
-            <key> word </key>
-            <string> Novio </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Nuera </string>
-            <key> word </key>
-            <string> Nuera </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Oyente </string>
-            <key> word </key>
-            <string> Oyente </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Padrastro </string>
-            <key> word </key>
-            <string> Padrastro </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Padrino </string>
-            <key> word </key>
-            <string> Padrino </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Papa </string>
-            <key> word </key>
-            <string> Papa </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Pareja </string>
-            <key> word </key>
-            <string> Pareja </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Persona </string>
-            <key> word </key>
-            <string> Persona </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Prima </string>
-            <key> word </key>
-            <string> Prima </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Primo </string>
-            <key> word </key>
-            <string> Primo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Senor </string>
-            <key> word </key>
-            <string> Senor </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Senora </string>
-            <key> word </key>
-            <string> Senora </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Senorita </string>
-            <key> word </key>
-            <string> Senorita </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Separado </string>
-            <key> word </key>
-            <string> Separado </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Sobrina </string>
-            <key> word </key>
-            <string> Sobrina </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Sobrino </string>
-            <key> word </key>
-            <string> Sobrino </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Soltero </string>
-            <key> word </key>
-            <string> Soltero </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Sordo </string>
-            <key> word </key>
-            <string> Sordo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Suegra </string>
-            <key> word </key>
-            <string> Suegra </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Suegro </string>
-            <key> word </key>
-            <string> Suegro </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Tia </string>
-            <key> word </key>
-            <string> Tia </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Tio </string>
-            <key> word </key>
-            <string> Tio </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Unionlibre </string>
-            <key> word </key>
-            <string> Unionlibre </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Vecino </string>
-            <key> word </key>
-            <string> Vecino </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Viudo </string>
-            <key> word </key>
-            <string> Viudo </string>
-        </dict>
-        <dict>
-            <key> type </key>
-            <string> vid </string>
-            <key> fileName </key>
-            <string> Yerno </string>
-            <key> word </key>
-            <string> Yerno </string>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Abuela</string>
+            <key>word</key>
+            <string>Abuela</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Abuelo</string>
+            <key>word</key>
+            <string>Abuelo</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Adulto</string>
+            <key>word</key>
+            <string>Adulto</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Amante</string>
+            <key>word</key>
+            <string>Amante</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Amiga</string>
+            <key>word</key>
+            <string>Amiga</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Amigo</string>
+            <key>word</key>
+            <string>Amigo</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Anciano</string>
+            <key>word</key>
+            <string>Anciano</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Bebe</string>
+            <key>word</key>
+            <string>Bebe</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Bisabuela</string>
+            <key>word</key>
+            <string>Bisabuela</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Bisabuelo</string>
+            <key>word</key>
+            <string>Bisabuelo</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Bisnieta</string>
+            <key>word</key>
+            <string>Bisnieta</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Bisnieto</string>
+            <key>word</key>
+            <string>Bisnieto</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Ciego</string>
+            <key>word</key>
+            <string>Ciego</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Companero</string>
+            <key>word</key>
+            <string>Compañero</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Cunada</string>
+            <key>word</key>
+            <string>Cuñada</string>
+        </dict>
+        <dict>
+            <key>type</key>
+            <string>vid</string>
+            <key>fileName</key>
+            <string>Cunado</string>
+            <key>word</key>
+            <string>Cuñado</string>
         </dict>
     </array>
 </plist>

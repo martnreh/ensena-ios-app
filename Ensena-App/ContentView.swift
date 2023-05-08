@@ -9,8 +9,6 @@ import SwiftUI
 
 
 var currentCourseId: String = "6364360774dfad2101e1f079"
-//userID
-//6364357674dfad2101e1f078
 var currentCourseTitle: String = "Abecedario I"
 var idUserGlobal: String = ""
 var isAdminGlobal: Bool = false
@@ -37,36 +35,12 @@ struct ContentView: View {
         TabView{
             
             
-            if (!isLoggedIn){
-                LoginView(showingPrivacyAdvice: $showingPrivacyAdvice,userId: $userId, isLoggedIn: $isLoggedIn, isAdmin: $isAdmin).tabItem{
-                    Image(systemName: "person")
-                    Text("Perfil")
-                }
+            
+            InfoView().tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("Info")
+                
             }
-            
-            
-            else{
-                if (isAdmin){
-                     AdminView(userId: $userId, isLoggedIn: $isLoggedIn).tabItem{
-                         Image(systemName: "person")
-                         Text("Admin")
-                     }
-                     
-                 }
-                 
-                 else{
-
-                     ProfileView(userId: $userId, isLoggedIn: $isLoggedIn).tabItem{
-                         Image(systemName: "person")
-                         Text("Perfil")
-                     }
-            }
-            
-          
-
-
-            }
-            
             
             CoursesView().tabItem{
                 Image(systemName: "hand.point.up.left")

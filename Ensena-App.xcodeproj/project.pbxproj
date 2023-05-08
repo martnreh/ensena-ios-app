@@ -28,6 +28,114 @@
 		3A93C0102A015BE700361C4F /* Preguntas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A93C00F2A015BE700361C4F /* Preguntas.plist */; };
 		3ABEAB5B2A008EB000C98650 /* Abecedario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABEAB5A2A008EB000C98650 /* Abecedario.plist */; };
 		3ACC277729FF169500B22B3B /* Cursos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACC277629FF169500B22B3B /* Cursos.plist */; };
+		3ADB10822A056567004D725F /* Verbos Comunes I.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10812A056567004D725F /* Verbos Comunes I.plist */; };
+		3ADB10F32A057B94004D725F /* Explicar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10CF2A057B8E004D725F /* Explicar.m4v */; };
+		3ADB10F42A057B94004D725F /* Pagar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D02A057B8E004D725F /* Pagar.m4v */; };
+		3ADB10F52A057B94004D725F /* Comprar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D12A057B8F004D725F /* Comprar.m4v */; };
+		3ADB10F62A057B94004D725F /* Entender.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D22A057B8F004D725F /* Entender.m4v */; };
+		3ADB10F72A057B94004D725F /* Descansar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D32A057B8F004D725F /* Descansar.m4v */; };
+		3ADB10F82A057B94004D725F /* Poder.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D42A057B8F004D725F /* Poder.m4v */; };
+		3ADB10F92A057B94004D725F /* Decir.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D52A057B8F004D725F /* Decir.m4v */; };
+		3ADB10FA2A057B94004D725F /* Ayudar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D62A057B8F004D725F /* Ayudar.m4v */; };
+		3ADB10FB2A057B94004D725F /* Dar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D72A057B90004D725F /* Dar.m4v */; };
+		3ADB10FC2A057B94004D725F /* Vender.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D82A057B90004D725F /* Vender.m4v */; };
+		3ADB10FD2A057B94004D725F /* Vivir.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10D92A057B90004D725F /* Vivir.m4v */; };
+		3ADB10FE2A057B94004D725F /* Hablar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DA2A057B90004D725F /* Hablar.m4v */; };
+		3ADB10FF2A057B94004D725F /* Preguntar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DB2A057B90004D725F /* Preguntar.m4v */; };
+		3ADB11002A057B94004D725F /* Ensenar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DC2A057B90004D725F /* Ensenar.m4v */; };
+		3ADB11012A057B94004D725F /* Pensar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DD2A057B91004D725F /* Pensar.m4v */; };
+		3ADB11022A057B94004D725F /* Perder.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DE2A057B91004D725F /* Perder.m4v */; };
+		3ADB11032A057B94004D725F /* Trabajar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10DF2A057B91004D725F /* Trabajar.m4v */; };
+		3ADB11042A057B94004D725F /* Olvidar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E02A057B91004D725F /* Olvidar.m4v */; };
+		3ADB11052A057B94004D725F /* Ver.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E12A057B91004D725F /* Ver.m4v */; };
+		3ADB11062A057B94004D725F /* Estudiar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E22A057B91004D725F /* Estudiar.m4v */; };
+		3ADB11072A057B94004D725F /* Aprender.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E32A057B92004D725F /* Aprender.m4v */; };
+		3ADB11082A057B94004D725F /* Dormir.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E42A057B92004D725F /* Dormir.m4v */; };
+		3ADB11092A057B94004D725F /* Limpiar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E52A057B92004D725F /* Limpiar.m4v */; };
+		3ADB110A2A057B94004D725F /* Comer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E62A057B92004D725F /* Comer.m4v */; };
+		3ADB110B2A057B94004D725F /* Creer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E72A057B92004D725F /* Creer.m4v */; };
+		3ADB110C2A057B94004D725F /* Necesitar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E82A057B92004D725F /* Necesitar.m4v */; };
+		3ADB110D2A057B94004D725F /* Platicar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10E92A057B93004D725F /* Platicar.m4v */; };
+		3ADB110E2A057B94004D725F /* Empezar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10EA2A057B93004D725F /* Empezar.m4v */; };
+		3ADB110F2A057B94004D725F /* Sentar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10EB2A057B93004D725F /* Sentar.m4v */; };
+		3ADB11102A057B94004D725F /* Avisar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10EC2A057B93004D725F /* Avisar.m4v */; };
+		3ADB11112A057B94004D725F /* Cuidar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10ED2A057B93004D725F /* Cuidar.m4v */; };
+		3ADB11122A057B94004D725F /* Esperar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10EE2A057B93004D725F /* Esperar.m4v */; };
+		3ADB11132A057B94004D725F /* Hacer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10EF2A057B94004D725F /* Hacer.m4v */; };
+		3ADB11142A057B94004D725F /* Jugar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10F02A057B94004D725F /* Jugar.m4v */; };
+		3ADB11152A057B94004D725F /* Terminar.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10F12A057B94004D725F /* Terminar.m4v */; };
+		3ADB11162A057B94004D725F /* Escribir.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB10F22A057B94004D725F /* Escribir.m4v */; };
+		3ADB11182A05A0EF004D725F /* Verbos Comunes II.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11172A05A0EF004D725F /* Verbos Comunes II.plist */; };
+		3ADB111A2A082148004D725F /* Familia I.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11192A082148004D725F /* Familia I.plist */; };
+		3ADB115D2A0821E6004D725F /* Padrino.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB111C2A0821E4004D725F /* Padrino.m4v */; };
+		3ADB115E2A0821E6004D725F /* Adulto.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB111D2A0821E4004D725F /* Adulto.m4v */; };
+		3ADB115F2A0821E6004D725F /* Hija.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB111E2A0821E4004D725F /* Hija.m4v */; };
+		3ADB11602A0821E6004D725F /* Amante.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB111F2A0821E4004D725F /* Amante.m4v */; };
+		3ADB11612A0821E6004D725F /* Hermana.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11202A0821E4004D725F /* Hermana.m4v */; };
+		3ADB11622A0821E6004D725F /* Bisnieto.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11212A0821E4004D725F /* Bisnieto.m4v */; };
+		3ADB11632A0821E6004D725F /* Mujer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11222A0821E4004D725F /* Mujer.m4v */; };
+		3ADB11642A0821E6004D725F /* Tio.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11232A0821E4004D725F /* Tio.m4v */; };
+		3ADB11652A0821E6004D725F /* Oyente.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11242A0821E4004D725F /* Oyente.m4v */; };
+		3ADB11662A0821E6004D725F /* Hijastro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11252A0821E5004D725F /* Hijastro.m4v */; };
+		3ADB11672A0821E6004D725F /* Senorita.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11262A0821E5004D725F /* Senorita.m4v */; };
+		3ADB11682A0821E6004D725F /* Hijo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11272A0821E5004D725F /* Hijo.m4v */; };
+		3ADB11692A0821E6004D725F /* Nieta.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11282A0821E5004D725F /* Nieta.m4v */; };
+		3ADB116A2A0821E6004D725F /* Hermano.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11292A0821E5004D725F /* Hermano.m4v */; };
+		3ADB116B2A0821E6004D725F /* Separado.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112A2A0821E5004D725F /* Separado.m4v */; };
+		3ADB116C2A0821E6004D725F /* Nina.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112B2A0821E5004D725F /* Nina.m4v */; };
+		3ADB116D2A0821E6004D725F /* Primo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112C2A0821E5004D725F /* Primo.m4v */; };
+		3ADB116E2A0821E6004D725F /* Mediohermano.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112D2A0821E5004D725F /* Mediohermano.m4v */; };
+		3ADB116F2A0821E6004D725F /* Abuelo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112E2A0821E5004D725F /* Abuelo.m4v */; };
+		3ADB11702A0821E6004D725F /* Hombre.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB112F2A0821E5004D725F /* Hombre.m4v */; };
+		3ADB11712A0821E6004D725F /* Suegra.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11302A0821E5004D725F /* Suegra.m4v */; };
+		3ADB11722A0821E6004D725F /* Vecino.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11312A0821E5004D725F /* Vecino.m4v */; };
+		3ADB11732A0821E6004D725F /* Esposa.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11322A0821E5004D725F /* Esposa.m4v */; };
+		3ADB11742A0821E6004D725F /* Nino.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11332A0821E5004D725F /* Nino.m4v */; };
+		3ADB11752A0821E6004D725F /* Sobrino.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11342A0821E5004D725F /* Sobrino.m4v */; };
+		3ADB11762A0821E6004D725F /* Pareja.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11352A0821E5004D725F /* Pareja.m4v */; };
+		3ADB11772A0821E6004D725F /* Viudo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11362A0821E5004D725F /* Viudo.m4v */; };
+		3ADB11782A0821E6004D725F /* Bisnieta.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11372A0821E5004D725F /* Bisnieta.m4v */; };
+		3ADB11792A0821E6004D725F /* Mediahermana.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11382A0821E5004D725F /* Mediahermana.m4v */; };
+		3ADB117A2A0821E6004D725F /* Suegro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11392A0821E5004D725F /* Suegro.m4v */; };
+		3ADB117B2A0821E6004D725F /* Madrina.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113A2A0821E5004D725F /* Madrina.m4v */; };
+		3ADB117C2A0821E6004D725F /* Cunado.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113B2A0821E5004D725F /* Cunado.m4v */; };
+		3ADB117D2A0821E6004D725F /* Senor.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113C2A0821E5004D725F /* Senor.m4v */; };
+		3ADB117E2A0821E6004D725F /* Companero.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113D2A0821E5004D725F /* Companero.m4v */; };
+		3ADB117F2A0821E6004D725F /* Cunada.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113E2A0821E5004D725F /* Cunada.m4v */; };
+		3ADB11802A0821E6004D725F /* Bisabuelo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB113F2A0821E5004D725F /* Bisabuelo.m4v */; };
+		3ADB11812A0821E6004D725F /* Bebe.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11402A0821E5004D725F /* Bebe.m4v */; };
+		3ADB11822A0821E6004D725F /* Sobrina.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11412A0821E5004D725F /* Sobrina.m4v */; };
+		3ADB11832A0821E6004D725F /* Nieto.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11422A0821E6004D725F /* Nieto.m4v */; };
+		3ADB11842A0821E6004D725F /* Papa.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11432A0821E6004D725F /* Papa.m4v */; };
+		3ADB11852A0821E6004D725F /* Bisabuela.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11442A0821E6004D725F /* Bisabuela.m4v */; };
+		3ADB11862A0821E6004D725F /* Ciego.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11452A0821E6004D725F /* Ciego.m4v */; };
+		3ADB11872A0821E6004D725F /* Esposo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11462A0821E6004D725F /* Esposo.m4v */; };
+		3ADB11882A0821E6004D725F /* Anciano.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11472A0821E6004D725F /* Anciano.m4v */; };
+		3ADB11892A0821E6004D725F /* Divorciado.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11482A0821E6004D725F /* Divorciado.m4v */; };
+		3ADB118A2A0821E6004D725F /* Persona.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11492A0821E6004D725F /* Persona.m4v */; };
+		3ADB118B2A0821E6004D725F /* Huerfano.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114A2A0821E6004D725F /* Huerfano.m4v */; };
+		3ADB118C2A0821E6004D725F /* Padrastro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114B2A0821E6004D725F /* Padrastro.m4v */; };
+		3ADB118D2A0821E6004D725F /* Matrimonio.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114C2A0821E6004D725F /* Matrimonio.m4v */; };
+		3ADB118E2A0821E6004D725F /* Novia.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114D2A0821E6004D725F /* Novia.m4v */; };
+		3ADB118F2A0821E6004D725F /* Yerno.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114E2A0821E6004D725F /* Yerno.m4v */; };
+		3ADB11902A0821E6004D725F /* Amiga.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB114F2A0821E6004D725F /* Amiga.m4v */; };
+		3ADB11912A0821E6004D725F /* Mama.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11502A0821E6004D725F /* Mama.m4v */; };
+		3ADB11922A0821E6004D725F /* Prima.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11512A0821E6004D725F /* Prima.m4v */; };
+		3ADB11932A0821E6004D725F /* Senora.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11522A0821E6004D725F /* Senora.m4v */; };
+		3ADB11942A0821E6004D725F /* Tia.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11532A0821E6004D725F /* Tia.m4v */; };
+		3ADB11952A0821E6004D725F /* Madrastra.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11542A0821E6004D725F /* Madrastra.m4v */; };
+		3ADB11962A0821E6004D725F /* Soltero.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11552A0821E6004D725F /* Soltero.m4v */; };
+		3ADB11972A0821E6004D725F /* Sordo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11562A0821E6004D725F /* Sordo.m4v */; };
+		3ADB11982A0821E6004D725F /* Hijastra.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11572A0821E6004D725F /* Hijastra.m4v */; };
+		3ADB11992A0821E6004D725F /* Nuera.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11582A0821E6004D725F /* Nuera.m4v */; };
+		3ADB119A2A0821E6004D725F /* Amigo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11592A0821E6004D725F /* Amigo.m4v */; };
+		3ADB119B2A0821E6004D725F /* Novio.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB115A2A0821E6004D725F /* Novio.m4v */; };
+		3ADB119C2A0821E6004D725F /* Unionlibre.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB115B2A0821E6004D725F /* Unionlibre.m4v */; };
+		3ADB119D2A0821E6004D725F /* Abuela.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB115C2A0821E6004D725F /* Abuela.m4v */; };
+		3ADB119F2A0824BE004D725F /* Familia II.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB119E2A0824BE004D725F /* Familia II.plist */; };
+		3ADB11A12A082676004D725F /* Familia III.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11A02A082676004D725F /* Familia III.plist */; };
+		3ADB11A32A082684004D725F /* Familia IV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11A22A082684004D725F /* Familia IV.plist */; };
+		3ADB11A52A086984004D725F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB11A42A086984004D725F /* InfoView.swift */; };
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
@@ -98,6 +206,114 @@
 		3ABEAB5A2A008EB000C98650 /* Abecedario.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Abecedario.plist; sourceTree = "<group>"; };
 		3ACC277629FF169500B22B3B /* Cursos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cursos.plist; sourceTree = "<group>"; };
 		3ACC277829FF1D9E00B22B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3ADB10812A056567004D725F /* Verbos Comunes I.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Verbos Comunes I.plist"; sourceTree = "<group>"; };
+		3ADB10CF2A057B8E004D725F /* Explicar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Explicar.m4v; sourceTree = "<group>"; };
+		3ADB10D02A057B8E004D725F /* Pagar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pagar.m4v; sourceTree = "<group>"; };
+		3ADB10D12A057B8F004D725F /* Comprar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comprar.m4v; sourceTree = "<group>"; };
+		3ADB10D22A057B8F004D725F /* Entender.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entender.m4v; sourceTree = "<group>"; };
+		3ADB10D32A057B8F004D725F /* Descansar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Descansar.m4v; sourceTree = "<group>"; };
+		3ADB10D42A057B8F004D725F /* Poder.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Poder.m4v; sourceTree = "<group>"; };
+		3ADB10D52A057B8F004D725F /* Decir.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Decir.m4v; sourceTree = "<group>"; };
+		3ADB10D62A057B8F004D725F /* Ayudar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ayudar.m4v; sourceTree = "<group>"; };
+		3ADB10D72A057B90004D725F /* Dar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dar.m4v; sourceTree = "<group>"; };
+		3ADB10D82A057B90004D725F /* Vender.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vender.m4v; sourceTree = "<group>"; };
+		3ADB10D92A057B90004D725F /* Vivir.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vivir.m4v; sourceTree = "<group>"; };
+		3ADB10DA2A057B90004D725F /* Hablar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hablar.m4v; sourceTree = "<group>"; };
+		3ADB10DB2A057B90004D725F /* Preguntar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Preguntar.m4v; sourceTree = "<group>"; };
+		3ADB10DC2A057B90004D725F /* Ensenar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ensenar.m4v; sourceTree = "<group>"; };
+		3ADB10DD2A057B91004D725F /* Pensar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pensar.m4v; sourceTree = "<group>"; };
+		3ADB10DE2A057B91004D725F /* Perder.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Perder.m4v; sourceTree = "<group>"; };
+		3ADB10DF2A057B91004D725F /* Trabajar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trabajar.m4v; sourceTree = "<group>"; };
+		3ADB10E02A057B91004D725F /* Olvidar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Olvidar.m4v; sourceTree = "<group>"; };
+		3ADB10E12A057B91004D725F /* Ver.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ver.m4v; sourceTree = "<group>"; };
+		3ADB10E22A057B91004D725F /* Estudiar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Estudiar.m4v; sourceTree = "<group>"; };
+		3ADB10E32A057B92004D725F /* Aprender.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aprender.m4v; sourceTree = "<group>"; };
+		3ADB10E42A057B92004D725F /* Dormir.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dormir.m4v; sourceTree = "<group>"; };
+		3ADB10E52A057B92004D725F /* Limpiar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Limpiar.m4v; sourceTree = "<group>"; };
+		3ADB10E62A057B92004D725F /* Comer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comer.m4v; sourceTree = "<group>"; };
+		3ADB10E72A057B92004D725F /* Creer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Creer.m4v; sourceTree = "<group>"; };
+		3ADB10E82A057B92004D725F /* Necesitar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Necesitar.m4v; sourceTree = "<group>"; };
+		3ADB10E92A057B93004D725F /* Platicar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Platicar.m4v; sourceTree = "<group>"; };
+		3ADB10EA2A057B93004D725F /* Empezar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Empezar.m4v; sourceTree = "<group>"; };
+		3ADB10EB2A057B93004D725F /* Sentar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sentar.m4v; sourceTree = "<group>"; };
+		3ADB10EC2A057B93004D725F /* Avisar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avisar.m4v; sourceTree = "<group>"; };
+		3ADB10ED2A057B93004D725F /* Cuidar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cuidar.m4v; sourceTree = "<group>"; };
+		3ADB10EE2A057B93004D725F /* Esperar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Esperar.m4v; sourceTree = "<group>"; };
+		3ADB10EF2A057B94004D725F /* Hacer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hacer.m4v; sourceTree = "<group>"; };
+		3ADB10F02A057B94004D725F /* Jugar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jugar.m4v; sourceTree = "<group>"; };
+		3ADB10F12A057B94004D725F /* Terminar.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Terminar.m4v; sourceTree = "<group>"; };
+		3ADB10F22A057B94004D725F /* Escribir.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Escribir.m4v; sourceTree = "<group>"; };
+		3ADB11172A05A0EF004D725F /* Verbos Comunes II.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Verbos Comunes II.plist"; sourceTree = "<group>"; };
+		3ADB11192A082148004D725F /* Familia I.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia I.plist"; sourceTree = "<group>"; };
+		3ADB111C2A0821E4004D725F /* Padrino.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Padrino.m4v; sourceTree = "<group>"; };
+		3ADB111D2A0821E4004D725F /* Adulto.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Adulto.m4v; sourceTree = "<group>"; };
+		3ADB111E2A0821E4004D725F /* Hija.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hija.m4v; sourceTree = "<group>"; };
+		3ADB111F2A0821E4004D725F /* Amante.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amante.m4v; sourceTree = "<group>"; };
+		3ADB11202A0821E4004D725F /* Hermana.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hermana.m4v; sourceTree = "<group>"; };
+		3ADB11212A0821E4004D725F /* Bisnieto.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bisnieto.m4v; sourceTree = "<group>"; };
+		3ADB11222A0821E4004D725F /* Mujer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mujer.m4v; sourceTree = "<group>"; };
+		3ADB11232A0821E4004D725F /* Tio.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tio.m4v; sourceTree = "<group>"; };
+		3ADB11242A0821E4004D725F /* Oyente.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Oyente.m4v; sourceTree = "<group>"; };
+		3ADB11252A0821E5004D725F /* Hijastro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hijastro.m4v; sourceTree = "<group>"; };
+		3ADB11262A0821E5004D725F /* Senorita.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Senorita.m4v; sourceTree = "<group>"; };
+		3ADB11272A0821E5004D725F /* Hijo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hijo.m4v; sourceTree = "<group>"; };
+		3ADB11282A0821E5004D725F /* Nieta.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nieta.m4v; sourceTree = "<group>"; };
+		3ADB11292A0821E5004D725F /* Hermano.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hermano.m4v; sourceTree = "<group>"; };
+		3ADB112A2A0821E5004D725F /* Separado.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Separado.m4v; sourceTree = "<group>"; };
+		3ADB112B2A0821E5004D725F /* Nina.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nina.m4v; sourceTree = "<group>"; };
+		3ADB112C2A0821E5004D725F /* Primo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Primo.m4v; sourceTree = "<group>"; };
+		3ADB112D2A0821E5004D725F /* Mediohermano.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mediohermano.m4v; sourceTree = "<group>"; };
+		3ADB112E2A0821E5004D725F /* Abuelo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abuelo.m4v; sourceTree = "<group>"; };
+		3ADB112F2A0821E5004D725F /* Hombre.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hombre.m4v; sourceTree = "<group>"; };
+		3ADB11302A0821E5004D725F /* Suegra.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suegra.m4v; sourceTree = "<group>"; };
+		3ADB11312A0821E5004D725F /* Vecino.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vecino.m4v; sourceTree = "<group>"; };
+		3ADB11322A0821E5004D725F /* Esposa.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Esposa.m4v; sourceTree = "<group>"; };
+		3ADB11332A0821E5004D725F /* Nino.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nino.m4v; sourceTree = "<group>"; };
+		3ADB11342A0821E5004D725F /* Sobrino.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sobrino.m4v; sourceTree = "<group>"; };
+		3ADB11352A0821E5004D725F /* Pareja.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pareja.m4v; sourceTree = "<group>"; };
+		3ADB11362A0821E5004D725F /* Viudo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Viudo.m4v; sourceTree = "<group>"; };
+		3ADB11372A0821E5004D725F /* Bisnieta.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bisnieta.m4v; sourceTree = "<group>"; };
+		3ADB11382A0821E5004D725F /* Mediahermana.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mediahermana.m4v; sourceTree = "<group>"; };
+		3ADB11392A0821E5004D725F /* Suegro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suegro.m4v; sourceTree = "<group>"; };
+		3ADB113A2A0821E5004D725F /* Madrina.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Madrina.m4v; sourceTree = "<group>"; };
+		3ADB113B2A0821E5004D725F /* Cunado.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cunado.m4v; sourceTree = "<group>"; };
+		3ADB113C2A0821E5004D725F /* Senor.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Senor.m4v; sourceTree = "<group>"; };
+		3ADB113D2A0821E5004D725F /* Companero.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Companero.m4v; sourceTree = "<group>"; };
+		3ADB113E2A0821E5004D725F /* Cunada.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cunada.m4v; sourceTree = "<group>"; };
+		3ADB113F2A0821E5004D725F /* Bisabuelo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bisabuelo.m4v; sourceTree = "<group>"; };
+		3ADB11402A0821E5004D725F /* Bebe.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bebe.m4v; sourceTree = "<group>"; };
+		3ADB11412A0821E5004D725F /* Sobrina.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sobrina.m4v; sourceTree = "<group>"; };
+		3ADB11422A0821E6004D725F /* Nieto.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nieto.m4v; sourceTree = "<group>"; };
+		3ADB11432A0821E6004D725F /* Papa.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Papa.m4v; sourceTree = "<group>"; };
+		3ADB11442A0821E6004D725F /* Bisabuela.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bisabuela.m4v; sourceTree = "<group>"; };
+		3ADB11452A0821E6004D725F /* Ciego.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ciego.m4v; sourceTree = "<group>"; };
+		3ADB11462A0821E6004D725F /* Esposo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Esposo.m4v; sourceTree = "<group>"; };
+		3ADB11472A0821E6004D725F /* Anciano.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anciano.m4v; sourceTree = "<group>"; };
+		3ADB11482A0821E6004D725F /* Divorciado.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Divorciado.m4v; sourceTree = "<group>"; };
+		3ADB11492A0821E6004D725F /* Persona.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Persona.m4v; sourceTree = "<group>"; };
+		3ADB114A2A0821E6004D725F /* Huerfano.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Huerfano.m4v; sourceTree = "<group>"; };
+		3ADB114B2A0821E6004D725F /* Padrastro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Padrastro.m4v; sourceTree = "<group>"; };
+		3ADB114C2A0821E6004D725F /* Matrimonio.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Matrimonio.m4v; sourceTree = "<group>"; };
+		3ADB114D2A0821E6004D725F /* Novia.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Novia.m4v; sourceTree = "<group>"; };
+		3ADB114E2A0821E6004D725F /* Yerno.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yerno.m4v; sourceTree = "<group>"; };
+		3ADB114F2A0821E6004D725F /* Amiga.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amiga.m4v; sourceTree = "<group>"; };
+		3ADB11502A0821E6004D725F /* Mama.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mama.m4v; sourceTree = "<group>"; };
+		3ADB11512A0821E6004D725F /* Prima.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Prima.m4v; sourceTree = "<group>"; };
+		3ADB11522A0821E6004D725F /* Senora.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Senora.m4v; sourceTree = "<group>"; };
+		3ADB11532A0821E6004D725F /* Tia.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tia.m4v; sourceTree = "<group>"; };
+		3ADB11542A0821E6004D725F /* Madrastra.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Madrastra.m4v; sourceTree = "<group>"; };
+		3ADB11552A0821E6004D725F /* Soltero.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Soltero.m4v; sourceTree = "<group>"; };
+		3ADB11562A0821E6004D725F /* Sordo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sordo.m4v; sourceTree = "<group>"; };
+		3ADB11572A0821E6004D725F /* Hijastra.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hijastra.m4v; sourceTree = "<group>"; };
+		3ADB11582A0821E6004D725F /* Nuera.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nuera.m4v; sourceTree = "<group>"; };
+		3ADB11592A0821E6004D725F /* Amigo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amigo.m4v; sourceTree = "<group>"; };
+		3ADB115A2A0821E6004D725F /* Novio.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Novio.m4v; sourceTree = "<group>"; };
+		3ADB115B2A0821E6004D725F /* Unionlibre.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unionlibre.m4v; sourceTree = "<group>"; };
+		3ADB115C2A0821E6004D725F /* Abuela.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abuela.m4v; sourceTree = "<group>"; };
+		3ADB119E2A0824BE004D725F /* Familia II.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia II.plist"; sourceTree = "<group>"; };
+		3ADB11A02A082676004D725F /* Familia III.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia III.plist"; sourceTree = "<group>"; };
+		3ADB11A22A082684004D725F /* Familia IV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia IV.plist"; sourceTree = "<group>"; };
+		3ADB11A42A086984004D725F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -192,6 +408,121 @@
 			path = MediaPreguntas;
 			sourceTree = "<group>";
 		};
+		3ADB10CE2A057B7E004D725F /* MediaVerbos */ = {
+			isa = PBXGroup;
+			children = (
+				3ADB10E32A057B92004D725F /* Aprender.m4v */,
+				3ADB10EC2A057B93004D725F /* Avisar.m4v */,
+				3ADB10D62A057B8F004D725F /* Ayudar.m4v */,
+				3ADB10E62A057B92004D725F /* Comer.m4v */,
+				3ADB10D12A057B8F004D725F /* Comprar.m4v */,
+				3ADB10E72A057B92004D725F /* Creer.m4v */,
+				3ADB10ED2A057B93004D725F /* Cuidar.m4v */,
+				3ADB10D72A057B90004D725F /* Dar.m4v */,
+				3ADB10D52A057B8F004D725F /* Decir.m4v */,
+				3ADB10D32A057B8F004D725F /* Descansar.m4v */,
+				3ADB10E42A057B92004D725F /* Dormir.m4v */,
+				3ADB10EA2A057B93004D725F /* Empezar.m4v */,
+				3ADB10DC2A057B90004D725F /* Ensenar.m4v */,
+				3ADB10D22A057B8F004D725F /* Entender.m4v */,
+				3ADB10F22A057B94004D725F /* Escribir.m4v */,
+				3ADB10EE2A057B93004D725F /* Esperar.m4v */,
+				3ADB10E22A057B91004D725F /* Estudiar.m4v */,
+				3ADB10CF2A057B8E004D725F /* Explicar.m4v */,
+				3ADB10DA2A057B90004D725F /* Hablar.m4v */,
+				3ADB10EF2A057B94004D725F /* Hacer.m4v */,
+				3ADB10F02A057B94004D725F /* Jugar.m4v */,
+				3ADB10E52A057B92004D725F /* Limpiar.m4v */,
+				3ADB10E82A057B92004D725F /* Necesitar.m4v */,
+				3ADB10E02A057B91004D725F /* Olvidar.m4v */,
+				3ADB10D02A057B8E004D725F /* Pagar.m4v */,
+				3ADB10DD2A057B91004D725F /* Pensar.m4v */,
+				3ADB10DE2A057B91004D725F /* Perder.m4v */,
+				3ADB10E92A057B93004D725F /* Platicar.m4v */,
+				3ADB10D42A057B8F004D725F /* Poder.m4v */,
+				3ADB10DB2A057B90004D725F /* Preguntar.m4v */,
+				3ADB10EB2A057B93004D725F /* Sentar.m4v */,
+				3ADB10F12A057B94004D725F /* Terminar.m4v */,
+				3ADB10DF2A057B91004D725F /* Trabajar.m4v */,
+				3ADB10D82A057B90004D725F /* Vender.m4v */,
+				3ADB10E12A057B91004D725F /* Ver.m4v */,
+				3ADB10D92A057B90004D725F /* Vivir.m4v */,
+			);
+			path = MediaVerbos;
+			sourceTree = "<group>";
+		};
+		3ADB111B2A08216A004D725F /* MediaFamilia */ = {
+			isa = PBXGroup;
+			children = (
+				3ADB115C2A0821E6004D725F /* Abuela.m4v */,
+				3ADB112E2A0821E5004D725F /* Abuelo.m4v */,
+				3ADB111D2A0821E4004D725F /* Adulto.m4v */,
+				3ADB111F2A0821E4004D725F /* Amante.m4v */,
+				3ADB114F2A0821E6004D725F /* Amiga.m4v */,
+				3ADB11592A0821E6004D725F /* Amigo.m4v */,
+				3ADB11472A0821E6004D725F /* Anciano.m4v */,
+				3ADB11402A0821E5004D725F /* Bebe.m4v */,
+				3ADB11442A0821E6004D725F /* Bisabuela.m4v */,
+				3ADB113F2A0821E5004D725F /* Bisabuelo.m4v */,
+				3ADB11372A0821E5004D725F /* Bisnieta.m4v */,
+				3ADB11212A0821E4004D725F /* Bisnieto.m4v */,
+				3ADB11452A0821E6004D725F /* Ciego.m4v */,
+				3ADB113D2A0821E5004D725F /* Companero.m4v */,
+				3ADB113E2A0821E5004D725F /* Cunada.m4v */,
+				3ADB113B2A0821E5004D725F /* Cunado.m4v */,
+				3ADB11482A0821E6004D725F /* Divorciado.m4v */,
+				3ADB11322A0821E5004D725F /* Esposa.m4v */,
+				3ADB11462A0821E6004D725F /* Esposo.m4v */,
+				3ADB11202A0821E4004D725F /* Hermana.m4v */,
+				3ADB11292A0821E5004D725F /* Hermano.m4v */,
+				3ADB111E2A0821E4004D725F /* Hija.m4v */,
+				3ADB11572A0821E6004D725F /* Hijastra.m4v */,
+				3ADB11252A0821E5004D725F /* Hijastro.m4v */,
+				3ADB11272A0821E5004D725F /* Hijo.m4v */,
+				3ADB112F2A0821E5004D725F /* Hombre.m4v */,
+				3ADB114A2A0821E6004D725F /* Huerfano.m4v */,
+				3ADB11542A0821E6004D725F /* Madrastra.m4v */,
+				3ADB113A2A0821E5004D725F /* Madrina.m4v */,
+				3ADB11502A0821E6004D725F /* Mama.m4v */,
+				3ADB114C2A0821E6004D725F /* Matrimonio.m4v */,
+				3ADB11382A0821E5004D725F /* Mediahermana.m4v */,
+				3ADB112D2A0821E5004D725F /* Mediohermano.m4v */,
+				3ADB11222A0821E4004D725F /* Mujer.m4v */,
+				3ADB11282A0821E5004D725F /* Nieta.m4v */,
+				3ADB11422A0821E6004D725F /* Nieto.m4v */,
+				3ADB112B2A0821E5004D725F /* Nina.m4v */,
+				3ADB11332A0821E5004D725F /* Nino.m4v */,
+				3ADB114D2A0821E6004D725F /* Novia.m4v */,
+				3ADB115A2A0821E6004D725F /* Novio.m4v */,
+				3ADB11582A0821E6004D725F /* Nuera.m4v */,
+				3ADB11242A0821E4004D725F /* Oyente.m4v */,
+				3ADB114B2A0821E6004D725F /* Padrastro.m4v */,
+				3ADB111C2A0821E4004D725F /* Padrino.m4v */,
+				3ADB11432A0821E6004D725F /* Papa.m4v */,
+				3ADB11352A0821E5004D725F /* Pareja.m4v */,
+				3ADB11492A0821E6004D725F /* Persona.m4v */,
+				3ADB11512A0821E6004D725F /* Prima.m4v */,
+				3ADB112C2A0821E5004D725F /* Primo.m4v */,
+				3ADB113C2A0821E5004D725F /* Senor.m4v */,
+				3ADB11522A0821E6004D725F /* Senora.m4v */,
+				3ADB11262A0821E5004D725F /* Senorita.m4v */,
+				3ADB112A2A0821E5004D725F /* Separado.m4v */,
+				3ADB11412A0821E5004D725F /* Sobrina.m4v */,
+				3ADB11342A0821E5004D725F /* Sobrino.m4v */,
+				3ADB11552A0821E6004D725F /* Soltero.m4v */,
+				3ADB11562A0821E6004D725F /* Sordo.m4v */,
+				3ADB11302A0821E5004D725F /* Suegra.m4v */,
+				3ADB11392A0821E5004D725F /* Suegro.m4v */,
+				3ADB11532A0821E6004D725F /* Tia.m4v */,
+				3ADB11232A0821E4004D725F /* Tio.m4v */,
+				3ADB115B2A0821E6004D725F /* Unionlibre.m4v */,
+				3ADB11312A0821E5004D725F /* Vecino.m4v */,
+				3ADB11362A0821E5004D725F /* Viudo.m4v */,
+				3ADB114E2A0821E6004D725F /* Yerno.m4v */,
+			);
+			path = MediaFamilia;
+			sourceTree = "<group>";
+		};
 		5B35A369291D47EC00BA8735 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +536,7 @@
 				5B35A36A291E8B0C00BA8735 /* LearnView.swift */,
 				5B2D9E4F29223BE700A9C75D /* LoadingView.swift */,
 				5B355A8C2933D3D400B5561A /* RegisterView.swift */,
+				3ADB11A42A086984004D725F /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +595,8 @@
 		5BAF4F312919B72000900570 /* Ensena-App */ = {
 			isa = PBXGroup;
 			children = (
+				3ADB111B2A08216A004D725F /* MediaFamilia */,
+				3ADB10CE2A057B7E004D725F /* MediaVerbos */,
 				3A93BFFC2A015ADE00361C4F /* MediaPreguntas */,
 				3A93BFF62A0158EC00361C4F /* MediaCuerpo */,
 				3A93BFF32A0158D900361C4F /* MediaABC */,
@@ -277,8 +611,14 @@
 				5BAF4F382919B72200900570 /* Preview Content */,
 				3ACC277629FF169500B22B3B /* Cursos.plist */,
 				3ABEAB5A2A008EB000C98650 /* Abecedario.plist */,
+				3ADB11A02A082676004D725F /* Familia III.plist */,
+				3ADB11A22A082684004D725F /* Familia IV.plist */,
 				3A93BFE72A0156F800361C4F /* Cuerpo.plist */,
 				3A93C00F2A015BE700361C4F /* Preguntas.plist */,
+				3ADB10812A056567004D725F /* Verbos Comunes I.plist */,
+				3ADB11172A05A0EF004D725F /* Verbos Comunes II.plist */,
+				3ADB11192A082148004D725F /* Familia I.plist */,
+				3ADB119E2A0824BE004D725F /* Familia II.plist */,
 			);
 			path = "Ensena-App";
 			sourceTree = "<group>";
@@ -436,26 +776,133 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADB11112A057B94004D725F /* Cuidar.m4v in Resources */,
 				3A93C0062A015BA700361C4F /* Quien.m4v in Resources */,
 				3A93C00E2A015BA700361C4F /* Cuando.m4v in Resources */,
+				3ADB11992A0821E6004D725F /* Nuera.m4v in Resources */,
+				3ADB11072A057B94004D725F /* Aprender.m4v in Resources */,
 				3A93C0072A015BA700361C4F /* Donde.m4v in Resources */,
+				3ADB119D2A0821E6004D725F /* Abuela.m4v in Resources */,
+				3ADB11082A057B94004D725F /* Dormir.m4v in Resources */,
+				3ADB115D2A0821E6004D725F /* Padrino.m4v in Resources */,
+				3ADB11832A0821E6004D725F /* Nieto.m4v in Resources */,
+				3ADB11052A057B94004D725F /* Ver.m4v in Resources */,
+				3ADB11142A057B94004D725F /* Jugar.m4v in Resources */,
+				3ADB10F92A057B94004D725F /* Decir.m4v in Resources */,
+				3ADB110D2A057B94004D725F /* Platicar.m4v in Resources */,
+				3ADB117D2A0821E6004D725F /* Senor.m4v in Resources */,
+				3ADB118D2A0821E6004D725F /* Matrimonio.m4v in Resources */,
 				3A93BFF92A01592800361C4F /* k.m4v in Resources */,
+				3ADB11702A0821E6004D725F /* Hombre.m4v in Resources */,
+				3ADB11132A057B94004D725F /* Hacer.m4v in Resources */,
+				3ADB119C2A0821E6004D725F /* Unionlibre.m4v in Resources */,
+				3ADB10FE2A057B94004D725F /* Hablar.m4v in Resources */,
+				3ADB116A2A0821E6004D725F /* Hermano.m4v in Resources */,
+				3ADB11972A0821E6004D725F /* Sordo.m4v in Resources */,
+				3ADB117A2A0821E6004D725F /* Suegro.m4v in Resources */,
+				3ADB117C2A0821E6004D725F /* Cunado.m4v in Resources */,
+				3ADB119F2A0824BE004D725F /* Familia II.plist in Resources */,
+				3ADB11922A0821E6004D725F /* Prima.m4v in Resources */,
+				3ADB10FD2A057B94004D725F /* Vivir.m4v in Resources */,
+				3ADB11032A057B94004D725F /* Trabajar.m4v in Resources */,
+				3ADB116E2A0821E6004D725F /* Mediohermano.m4v in Resources */,
+				3ADB117E2A0821E6004D725F /* Companero.m4v in Resources */,
+				3ADB10F62A057B94004D725F /* Entender.m4v in Resources */,
 				3A93BFF02A01588200361C4F /* corazon.m4v in Resources */,
+				3ADB11022A057B94004D725F /* Perder.m4v in Resources */,
+				3ADB10FF2A057B94004D725F /* Preguntar.m4v in Resources */,
+				3ADB11642A0821E6004D725F /* Tio.m4v in Resources */,
 				3A93C0102A015BE700361C4F /* Preguntas.plist in Resources */,
+				3ADB110C2A057B94004D725F /* Necesitar.m4v in Resources */,
+				3ADB11842A0821E6004D725F /* Papa.m4v in Resources */,
+				3ADB11912A0821E6004D725F /* Mama.m4v in Resources */,
+				3ADB11682A0821E6004D725F /* Hijo.m4v in Resources */,
+				3ADB116F2A0821E6004D725F /* Abuelo.m4v in Resources */,
+				3ADB11662A0821E6004D725F /* Hijastro.m4v in Resources */,
 				3A93BFEE2A01588200361C4F /* cara.m4v in Resources */,
+				3ADB11672A0821E6004D725F /* Senorita.m4v in Resources */,
+				3ADB11852A0821E6004D725F /* Bisabuela.m4v in Resources */,
+				3ADB115F2A0821E6004D725F /* Hija.m4v in Resources */,
+				3ADB11612A0821E6004D725F /* Hermana.m4v in Resources */,
+				3ADB10FA2A057B94004D725F /* Ayudar.m4v in Resources */,
+				3ADB115E2A0821E6004D725F /* Adulto.m4v in Resources */,
+				3ADB10F82A057B94004D725F /* Poder.m4v in Resources */,
+				3ADB11802A0821E6004D725F /* Bisabuelo.m4v in Resources */,
+				3ADB11902A0821E6004D725F /* Amiga.m4v in Resources */,
+				3ADB11962A0821E6004D725F /* Soltero.m4v in Resources */,
 				5BAF4F3A2919B72200900570 /* Preview Assets.xcassets in Resources */,
+				3ADB116D2A0821E6004D725F /* Primo.m4v in Resources */,
+				3ADB119A2A0821E6004D725F /* Amigo.m4v in Resources */,
+				3ADB11062A057B94004D725F /* Estudiar.m4v in Resources */,
+				3ADB11892A0821E6004D725F /* Divorciado.m4v in Resources */,
+				3ADB118E2A0821E6004D725F /* Novia.m4v in Resources */,
+				3ADB11732A0821E6004D725F /* Esposa.m4v in Resources */,
+				3ADB11782A0821E6004D725F /* Bisnieta.m4v in Resources */,
+				3ADB110F2A057B94004D725F /* Sentar.m4v in Resources */,
 				3ABEAB5B2A008EB000C98650 /* Abecedario.plist in Resources */,
+				3ADB10F42A057B94004D725F /* Pagar.m4v in Resources */,
+				3ADB11152A057B94004D725F /* Terminar.m4v in Resources */,
+				3ADB11652A0821E6004D725F /* Oyente.m4v in Resources */,
+				3ADB11812A0821E6004D725F /* Bebe.m4v in Resources */,
 				3A93C00B2A015BA700361C4F /* Como.m4v in Resources */,
+				3ADB11932A0821E6004D725F /* Senora.m4v in Resources */,
 				3A93BFE62A0155F900361C4F /* j.m4v in Resources */,
+				3ADB11622A0821E6004D725F /* Bisnieto.m4v in Resources */,
+				3ADB116C2A0821E6004D725F /* Nina.m4v in Resources */,
+				3ADB10F72A057B94004D725F /* Descansar.m4v in Resources */,
+				3ADB110A2A057B94004D725F /* Comer.m4v in Resources */,
+				3ADB11602A0821E6004D725F /* Amante.m4v in Resources */,
+				3ADB11162A057B94004D725F /* Escribir.m4v in Resources */,
 				3A93C00D2A015BA700361C4F /* Paraque.m4v in Resources */,
+				3ADB11012A057B94004D725F /* Pensar.m4v in Resources */,
 				3ACC277729FF169500B22B3B /* Cursos.plist in Resources */,
+				3ADB11102A057B94004D725F /* Avisar.m4v in Resources */,
+				3ADB10FC2A057B94004D725F /* Vender.m4v in Resources */,
 				3A93C00A2A015BA700361C4F /* Cuanto.m4v in Resources */,
+				3ADB11792A0821E6004D725F /* Mediahermana.m4v in Resources */,
 				3A93C0082A015BA700361C4F /* Porque.m4v in Resources */,
 				3A93BFEF2A01588200361C4F /* boca.m4v in Resources */,
+				3ADB10F32A057B94004D725F /* Explicar.m4v in Resources */,
+				3ADB11882A0821E6004D725F /* Anciano.m4v in Resources */,
+				3ADB119B2A0821E6004D725F /* Novio.m4v in Resources */,
+				3ADB11772A0821E6004D725F /* Viudo.m4v in Resources */,
+				3ADB11122A057B94004D725F /* Esperar.m4v in Resources */,
 				3A93C0092A015BA700361C4F /* Cual.m4v in Resources */,
+				3ADB11A32A082684004D725F /* Familia IV.plist in Resources */,
+				3ADB11712A0821E6004D725F /* Suegra.m4v in Resources */,
+				3ADB11742A0821E6004D725F /* Nino.m4v in Resources */,
+				3ADB11002A057B94004D725F /* Ensenar.m4v in Resources */,
+				3ADB11822A0821E6004D725F /* Sobrina.m4v in Resources */,
+				3ADB118C2A0821E6004D725F /* Padrastro.m4v in Resources */,
+				3ADB118F2A0821E6004D725F /* Yerno.m4v in Resources */,
 				3A93BFE82A0156F800361C4F /* Cuerpo.plist in Resources */,
+				3ADB117F2A0821E6004D725F /* Cunada.m4v in Resources */,
+				3ADB11752A0821E6004D725F /* Sobrino.m4v in Resources */,
+				3ADB11952A0821E6004D725F /* Madrastra.m4v in Resources */,
+				3ADB11632A0821E6004D725F /* Mujer.m4v in Resources */,
+				3ADB11042A057B94004D725F /* Olvidar.m4v in Resources */,
+				3ADB10822A056567004D725F /* Verbos Comunes I.plist in Resources */,
+				3ADB11182A05A0EF004D725F /* Verbos Comunes II.plist in Resources */,
+				3ADB10F52A057B94004D725F /* Comprar.m4v in Resources */,
+				3ADB110B2A057B94004D725F /* Creer.m4v in Resources */,
+				3ADB110E2A057B94004D725F /* Empezar.m4v in Resources */,
+				3ADB11982A0821E6004D725F /* Hijastra.m4v in Resources */,
+				3ADB11692A0821E6004D725F /* Nieta.m4v in Resources */,
+				3ADB11862A0821E6004D725F /* Ciego.m4v in Resources */,
 				3A93C00C2A015BA700361C4F /* Que.m4v in Resources */,
+				3ADB117B2A0821E6004D725F /* Madrina.m4v in Resources */,
+				3ADB11762A0821E6004D725F /* Pareja.m4v in Resources */,
+				3ADB11722A0821E6004D725F /* Vecino.m4v in Resources */,
+				3ADB11942A0821E6004D725F /* Tia.m4v in Resources */,
+				3ADB10FB2A057B94004D725F /* Dar.m4v in Resources */,
 				3A93BFED2A01588200361C4F /* cabeza.m4v in Resources */,
+				3ADB11092A057B94004D725F /* Limpiar.m4v in Resources */,
+				3ADB11872A0821E6004D725F /* Esposo.m4v in Resources */,
+				3ADB11A12A082676004D725F /* Familia III.plist in Resources */,
+				3ADB118B2A0821E6004D725F /* Huerfano.m4v in Resources */,
+				3ADB118A2A0821E6004D725F /* Persona.m4v in Resources */,
+				3ADB116B2A0821E6004D725F /* Separado.m4v in Resources */,
+				3ADB111A2A082148004D725F /* Familia I.plist in Resources */,
 				5BAF4F372919B72200900570 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +946,7 @@
 				5BAF4F6B2919B93E00900570 /* Content-ViewModel.swift in Sources */,
 				5B8048DC29220A0300245162 /* TriviaView.swift in Sources */,
 				5BAF4F6D2919B96600900570 /* CoursesView.swift in Sources */,
+				3ADB11A52A086984004D725F /* InfoView.swift in Sources */,
 				5B0813B2291AF39200702602 /* User.swift in Sources */,
 				5B8048D6292209A400245162 /* QuestionView.swift in Sources */,
 				5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */,
