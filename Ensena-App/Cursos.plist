@@ -32,5 +32,65 @@
 		<key>review</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>id</key>
+		<string>4</string>
+		<key>name</key>
+		<string>Verbos Comunes I</string>
+		<key>image</key>
+		<string>VerbosComunes</string>
+		<key>review</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>5</string>
+		<key>name</key>
+		<string>Verbos Comunes II</string>
+		<key>image</key>
+		<string>VerbosComunes</string>
+		<key>review</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>6</string>
+		<key>name</key>
+		<string>Familia I</string>
+		<key>image</key>
+		<string>Familia</string>
+		<key>review</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>7</string>
+		<key>name</key>
+		<string>Familia II</string>
+		<key>image</key>
+		<string>Familia</string>
+		<key>review</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>8</string>
+		<key>name</key>
+		<string>Familia III</string>
+		<key>image</key>
+		<string>Familia</string>
+		<key>review</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>9</string>
+		<key>name</key>
+		<string>Familia IV</string>
+		<key>image</key>
+		<string>Familia</string>
+		<key>review</key>
+		<false/>
+	</dict>
 </array>
 </plist>

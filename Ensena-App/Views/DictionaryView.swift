@@ -28,6 +28,43 @@ struct Dic: Decodable
 
 }
 
+struct DiccionarioNuevo: Decodable {
+    var resultado: [PalabraDic]
+    
+}
+
+struct PalabraDic: Decodable, Identifiable {
+    var id: UUID{
+        UUID()
+    }
+    var courseName: String
+    var image: String
+    var name: String
+}
+
+func cargarDiccionario() -> [PalabraDic] {
+    var dic: [PalabraDic] = []
+    
+    var cursos = cargaInfo()
+    for curso in cursos {
+        var cursoActual = curso.name
+        var palabrasActuales = cargaPalabras(course: cursoActual)
+        
+        for palabra in palabrasActuales {
+            
+            var objetoPalabra: PalabraDic = PalabraDic(courseName: cursoActual, image: curso.image, name: palabra.word)
+            
+            dic.append(objetoPalabra)
+            
+        }
+    }
+    
+    dic.sort{ $0.name < $1.name }
+
+    return dic
+}
+
+
 
 
 
@@ -36,18 +73,14 @@ struct DictionaryView: View {
     @State var searchText: String = ""
     @Binding var userId: String
     
-    @State var filteredList: [Dic.Word] = []
-    @State var allWords : [Dic.Word] = []
+    @State var filteredList: [PalabraDic] = []
+    @State var allWords : [PalabraDic] = []
 
 
     var body: some View {
       
         VStack{
-            
-         
-        
-        
-            
+
             NavigationView{
                 
                 ScrollView{
@@ -58,7 +91,7 @@ struct DictionaryView: View {
                     
                     NavigationLink(destination: LearnView(courseName:word.courseName)){
 
-                        WordView(palabra: word.name, image: word.image, grade: 10, max_grade: 10, courseName: word.courseName, courseId: word.courseId, userId: $userId)
+                        WordView(palabra: word.name, image: word.image, courseName: word.courseName)
 
 
                         }.background(Color("MidnightGreen"))
@@ -90,9 +123,10 @@ struct DictionaryView: View {
             
         }
         .onAppear{
-            Task {
-                await fetchDictionary()
-            }
+            
+            allWords = cargarDiccionario()
+            filteredList = allWords
+
         }
         
         
@@ -102,31 +136,7 @@ struct DictionaryView: View {
     
     
     
-    func fetchDictionary() async {
-        
-        let urlString = "http://127.0.0.1:5000/dictionary"
-        let url = URL(string: urlString)
-        
-        URLSession.shared.dataTask(with: url!) {data, _, error in
-            DispatchQueue.main.async{
-            if let data = data {
-                do {
-                    let decoder = JSONDecoder()
-                    let decodedData = try decoder.decode(Dic.self, from: data)
-
-                    
-                    DispatchQueue.main.async{
-                        self.allWords = decodedData.resultList
-                        self.filteredList = allWords
-                        
-                    }
-                }catch{
-                            print("Error!")
-                    }
-                }
-            }
-        }.resume()
-    }
+ 
     
     
     
@@ -134,34 +144,22 @@ struct DictionaryView: View {
     
 
 
-struct DictionaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        DictionaryView(userId: .constant(""))
-    }
-}
 
 
 struct WordView: View {
     
     var palabra: String
     var image: String
-    var grade: Int
-    var max_grade : Int
     var courseName: String
-    var courseId: String
-    @Binding var userId: String
     
     var body: some View {
 
         HStack{
             
-            AsyncImage(url: URL(string: image)) { imagen in
-                imagen.resizable()
-            }  placeholder: {
-                LoadingView(strong: true)
-            }
-            .frame(width: 100, height: 128)
-            .clipShape(RoundedRectangle(cornerRadius: 7))
+            Image(image)
+                .resizable()
+                .frame(width: 128, height: 128)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             
             
             VStack (alignment: .leading, spacing: 6){

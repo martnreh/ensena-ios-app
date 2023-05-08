@@ -113,7 +113,6 @@ struct LearnView: View {
                     VideoPlayer(player: player)
                         .frame(height: 263)
                         .onAppear() {
-                            player.play()
                             addObserver(player: player)
                         }
                         .onDisappear{
@@ -138,10 +137,7 @@ struct LearnView: View {
                     radius: 8,
                     x: 0,
                     y: 0)
-            .onAppear(){
-                print("aaaaaaa")
-                print(fileName)
-            }
+
             
             
         }
@@ -165,40 +161,40 @@ struct LearnView: View {
     }
     
     
-    class Palabra: Codable, Identifiable {
-        
-        var fileName: String
-        var word: String
-        var type: String
-        
-        init(fileName: String, word: String, type: String) {
-            self.fileName = fileName
-            self.word = word
-            self.type = type
-        }
-        
+
+}
+
+class Palabra: Codable, Identifiable {
+    
+    var fileName: String
+    var word: String
+    var type: String
+    
+    init(fileName: String, word: String, type: String) {
+        self.fileName = fileName
+        self.word = word
+        self.type = type
     }
     
+}
+
+
+func cargaPalabras(course: String) -> [Palabra] {
+    var ruta: String?
     
-    func cargaPalabras(course: String) -> [Palabra] {
-        var ruta: String?
+    ruta = Bundle.main.path(forResource: course, ofType: "plist")
+    
+    var listaPalabras = [Palabra]()
+    
+    do {
+        var miurl = URL(fileURLWithPath: ruta ?? "")
+        let data = try Data.init(contentsOf: miurl)
         
-        ruta = Bundle.main.path(forResource: course, ofType: "plist")
-        
-        var listaPalabras = [Palabra]()
-        
-        do {
-            var miurl = URL(fileURLWithPath: ruta ?? "")
-            print(miurl)
-            let data = try Data.init(contentsOf: miurl)
-            
-            print(data)
-            listaPalabras = try PropertyListDecoder().decode([Palabra].self, from: data)
-        }
-        catch {
-            print("Error al cargar archivo")
-        }
-        
-        return listaPalabras
+        listaPalabras = try PropertyListDecoder().decode([Palabra].self, from: data)
     }
+    catch {
+        print("Error al cargar archivo")
+    }
+    
+    return listaPalabras
 }
